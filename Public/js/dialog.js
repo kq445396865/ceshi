@@ -11,9 +11,9 @@ var dialog = {
     //成功弹出层
     success : function(message,url) {
         layer.open({
-            content : message,
-            icon : 1,
-            yes : function(){
+            content:message,
+            icon:1,
+            yes:function(){
                 location.href=url;
             },
         });
