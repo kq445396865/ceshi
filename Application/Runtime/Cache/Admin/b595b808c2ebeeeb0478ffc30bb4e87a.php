@@ -12,15 +12,26 @@
     <link href="./Public/css/bootstrap.css" rel="stylesheet">
     <!-- Add custom CSS here -->
     <link href="./Public/css/sb-admin.css" rel="stylesheet">
+        <link href="./Public/css/plugins/morris.css" rel="stylesheet">
     <link rel="stylesheet" href="./Public/font-awesome/css/font-awesome.min.css">
+       <link href="/Public/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/Public/css/sing/common.css" />
+    <link rel="stylesheet" href="/Public/css/party/bootstrap-switch.css" />
+    <link rel="stylesheet" type="text/css" href="/Public/css/party/uploadify.css">
     <!-- Page Specific CSS -->
-  </head>
+        <!-- JavaScript -->
+    <script src="./Public/js/jquery.js"></script>
+    <script src="./Public/js/bootstrap.js"></script>
 
+    <!-- Page Specific Plugins -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    <script src="./Public/js/tablesorter/jquery.tablesorter.js"></script>
+    <script src="./Public/js/tablesorter/tables.js"></script>
+  </head>
   <body>
 
     <div id="wrapper">
-
-      <!-- Sidebar -->
+     <!-- Sidebar -->
       <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -32,12 +43,11 @@
           </button>
           <a class="navbar-brand" href="index.html">Qicms</a>
         </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
+                <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-ex1-collapse">
           <ul class="nav navbar-nav side-nav">
-            <li class="active"><a href="index.html"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-            <li><a href="charts.html"><i class="fa fa-bar-chart-o"></i> Charts</a></li>
+            <li class="active"><a href="/admin.php?c=index"><i class="fa fa-dashboard"></i>首页</a></li>
+            <li><a href="/admin.php?c=menu"><i class="fa fa-bar-chart-o"></i> 菜单管理</a></li>
             <li><a href="tables.html"><i class="fa fa-table"></i> Tables</a></li>
             <li><a href="forms.html"><i class="fa fa-edit"></i> Forms</a></li>
             <li><a href="typography.html"><i class="fa fa-font"></i> Typography</a></li>
@@ -110,13 +120,15 @@
                 <li><a href="#"><i class="fa fa-envelope"></i> Inbox <span class="badge">7</span></a></li>
                 <li><a href="#"><i class="fa fa-gear"></i> Settings</a></li>
                 <li class="divider"></li>
-                <li><a href="#"><i class="fa fa-power-off"></i> Log Out</a></li>
+                <li><a href="/admin.php?c=Login&a=loginout"><i class="fa fa-power-off"></i>退出</a></li>
               </ul>
             </li>
           </ul>
         </div><!-- /.navbar-collapse -->
+
       </nav>
 
+ 
       <div id="page-wrapper">
 
         <div class="row">
@@ -396,16 +408,7 @@
 
     </div><!-- /#wrapper -->
 
-    <!-- JavaScript -->
-    <script src="./Public/js/jquery.js"></script>
-    <script src="./Public/js/bootstrap.js"></script>
-
-    <!-- Page Specific Plugins -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-    <script src="http://cdn.oesmith.co.uk/morris-0.4.3.min.js"></script>
-    <script src="./Public/js/morris/chart-data-morris.js"></script>
-    <script src="./Public/js/tablesorter/jquery.tablesorter.js"></script>
-    <script src="./Public/js/tablesorter/tables.js"></script>
+<script type="text/javascript" src="./Public/js/admin/common.js"></script>
 
   </body>
 </html>

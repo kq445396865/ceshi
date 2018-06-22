@@ -3,6 +3,9 @@ namespace Admin\Controller;
 use Think\Controller;
 class LoginController extends Controller {
     public function index(){
+    	if(session('adminUser')){
+    		$this -> redirect('/admin.php?c=index');
+    	}
         return $this->display();
     }
     public function check(){
@@ -23,7 +26,11 @@ class LoginController extends Controller {
     	if($ret['password'] != getMd5Password($password)) {
     		return show(0,'密码错误');
     	}
-
+        session('adminUser',$ret);
     	return show(1,'登陆成功');
+    }
+    public function loginout(){
+       session('adminUser',null);
+       $this -> redirect('/admin.php?c=login');
     }
 }
