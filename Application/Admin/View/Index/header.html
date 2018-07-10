@@ -22,6 +22,8 @@
         <!-- JavaScript -->
     <script src="./Public/js/jquery.js"></script>
     <script src="./Public/js/bootstrap.js"></script>
+    <script src="./Public/js/dialog/layer.js"></script>
+<script src="./Public/js/dialog.js"></script>
 
     <!-- Page Specific Plugins -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>

@@ -1,0 +1,2474 @@
+[ 2018-07-10T09:04:16+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: module E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 990 行.
+NOTIC: [8] Undefined variable: var E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 990 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 990 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 990 行.
+
+[ 2018-07-10T09:04:16+08:00 ] 127.0.0.1 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2018-07-10T09:11:54+08:00 ] 127.0.0.1 /admin.php?c=Menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] Undefined variable: module E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 990 行.
+NOTIC: [8] Undefined variable: var E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 990 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 990 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 990 行.
+
+[ 2018-07-10T09:11:54+08:00 ] 127.0.0.1 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2018-07-10T09:14:28+08:00 ] 127.0.0.1 /admin.php?c=Login&a=check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0340s ]
+SQL: SELECT * FROM `cms_admin` WHERE ( username="admin" ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-07-10T09:14:29+08:00 ] 127.0.0.1 /admin.php?c=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000500s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-10T09:14:30+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000500s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+NOTIC: [8] Undefined variable: menus E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 197 行.
+NOTIC: [8] Undefined variable: pageRes E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 212 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2018-07-10T10:11:51+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 9 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0305s ]
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 11 行.
+ERR: Think\Model:getMeuns方法不存在！
+
+[ 2018-07-10T10:12:36+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 9 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0035s ]
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 11 行.
+ERR: Think\Model:getMenus方法不存在！
+
+[ 2018-07-10T10:12:37+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 9 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0065s ]
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 11 行.
+ERR: Think\Model:getMenus方法不存在！
+
+[ 2018-07-10T10:12:38+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 9 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 11 行.
+ERR: Think\Model:getMenus方法不存在！
+
+[ 2018-07-10T10:12:48+08:00 ] 127.0.0.1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000500s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001500s ]
+
+[ 2018-07-10T10:12:56+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 9 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 11 行.
+ERR: Think\Model:getMenus方法不存在！
+
+[ 2018-07-10T10:12:59+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 9 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 11 行.
+ERR: Think\Model:getMenus方法不存在！
+
+[ 2018-07-10T10:13:26+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 9 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0035s ]
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 11 行.
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 12 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2018-07-10T10:15:04+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 9 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 11 行.
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 12 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2018-07-10T10:15:05+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 9 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 11 行.
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 12 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-07-10T10:15:05+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 9 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0025s ]
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 11 行.
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 12 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-07-10T10:22:50+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 9 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 11 行.
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 12 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0000s ]
+ERR: Think\Controller:assgin方法不存在！
+
+[ 2018-07-10T10:23:33+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 9 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 11 行.
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 12 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0005s ]
+ERR: Think\Controller:assgin方法不存在！
+
+[ 2018-07-10T10:23:34+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 9 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 11 行.
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 12 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0005s ]
+ERR: Think\Controller:assgin方法不存在！
+
+[ 2018-07-10T10:23:34+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 9 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0025s ]
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 11 行.
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 12 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0000s ]
+ERR: Think\Controller:assgin方法不存在！
+
+[ 2018-07-10T10:23:34+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 9 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 11 行.
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 12 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0005s ]
+ERR: Think\Controller:assgin方法不存在！
+
+[ 2018-07-10T10:23:34+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 9 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 11 行.
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 12 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0000s ]
+ERR: Think\Controller:assgin方法不存在！
+
+[ 2018-07-10T10:23:34+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 9 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 11 行.
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 12 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0000s ]
+ERR: Think\Controller:assgin方法不存在！
+
+[ 2018-07-10T10:23:36+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 9 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0025s ]
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 11 行.
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 12 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0000s ]
+ERR: Think\Controller:assgin方法不存在！
+
+[ 2018-07-10T10:24:20+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 9 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0025s ]
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 11 行.
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 12 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0005s ]
+ERR: Think\Controller:assgin方法不存在！
+
+[ 2018-07-10T10:24:28+08:00 ] 127.0.0.1 /admin.php?c=Menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 9 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0045s ]
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 11 行.
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 12 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0005s ]
+ERR: Think\Controller:assgin方法不存在！
+
+[ 2018-07-10T10:24:31+08:00 ] 127.0.0.1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+NOTIC: [8] Undefined variable: sing_path E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 991 行.
+NOTIC: [8] Undefined variable: module E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 994 行.
+NOTIC: [8] Undefined variable: var E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 997 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 997 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 997 行.
+
+[ 2018-07-10T10:24:31+08:00 ] 127.0.0.1 /admin.php?&c=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000500s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2018-07-10T10:24:39+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 9 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 11 行.
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 12 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0005s ]
+ERR: Think\Controller:assgin方法不存在！
+
+[ 2018-07-10T10:25:14+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 9 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0035s ]
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 11 行.
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 12 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-10T10:25:16+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 9 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 11 行.
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 12 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2018-07-10T10:25:17+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000500s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 9 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0045s ]
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 11 行.
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 12 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2018-07-10T10:26:15+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 9 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 11 行.
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 12 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: sing_path E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-10T10:26:16+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 9 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0035s ]
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 11 行.
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 12 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: sing_path E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2018-07-10T10:26:16+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 9 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 11 行.
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 12 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: sing_path E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-10T10:26:16+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 9 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 11 行.
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 12 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: sing_path E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2018-07-10T10:26:16+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 9 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 11 行.
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 12 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: sing_path E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2018-07-10T10:27:14+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 9 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 11 行.
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 12 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: sing_path E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2018-07-10T10:27:27+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 9 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 11 行.
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 12 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: sing_path E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2018-07-10T10:27:45+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 9 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0025s ]
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 11 行.
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 12 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: sing_path E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2018-07-10T10:28:04+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 9 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0045s ]
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 11 行.
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 12 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: sing_path E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-10T10:29:19+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 9 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 11 行.
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 12 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: sing_path E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php:13) E:\php\WWW\cms3.2\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php:13) E:\php\WWW\cms3.2\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php:13) E:\php\WWW\cms3.2\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-10T10:33:41+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 33 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: sing_path E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-10T10:33:42+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 33 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: sing_path E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001500s ]
+
+[ 2018-07-10T10:33:42+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 33 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: sing_path E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000500s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-10T10:33:42+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 33 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0025s ]
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: sing_path E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2018-07-10T10:35:17+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-10T10:36:00+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-10T10:36:00+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-10T10:36:00+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-10T10:36:01+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-10T10:36:16+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+
+[ 2018-07-10T10:37:10+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 33 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0025s ]
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: sing_path E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-10T10:37:12+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 33 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: sing_path E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2018-07-10T10:37:12+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 33 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0025s ]
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: sing_path E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2018-07-10T10:37:12+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 33 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0025s ]
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: sing_path E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-10T10:37:15+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 33 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0035s ]
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: sing_path E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-10T10:37:15+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 33 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: sing_path E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-07-10T10:37:15+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 33 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0045s ]
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: sing_path E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-10T10:37:15+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 33 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0035s ]
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: sing_path E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2018-07-10T10:37:16+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 33 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0025s ]
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: sing_path E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2018-07-10T10:37:31+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 33 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0045s ]
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: sing_path E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-10T10:37:54+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 33 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: sing_path E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2018-07-10T10:38:03+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 33 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: sing_path E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-10T10:38:18+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 33 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: sing_path E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-10T10:38:19+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 33 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: sing_path E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-10T10:38:19+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 33 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0025s ]
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: data E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: sing_path E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000500s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2018-07-10T10:38:59+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 34 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0025s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: sing_path E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-10T10:39:39+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 34 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: sing_path E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000500s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-10T10:39:40+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 34 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0025s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: sing_path E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-10T10:39:40+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 34 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: sing_path E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-10T10:39:40+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 34 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0025s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: sing_path E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2018-07-10T10:39:40+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 34 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: sing_path E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-10T10:39:40+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000500s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 34 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: sing_path E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-10T10:40:20+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 34 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0025s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: sing_path E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2018-07-10T10:40:29+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 34 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: sing_path E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2018-07-10T10:40:31+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 34 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0035s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: sing_path E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2018-07-10T10:40:33+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 34 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0035s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: sing_path E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2018-07-10T10:40:34+08:00 ] 127.0.0.1 /admin.php?c=menu&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000500s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] Undefined variable: menus E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\31553d7bb41170a30982ff9dddd5d67e.php 第 171 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-10T10:40:36+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 34 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: sing_path E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001500s ]
+
+[ 2018-07-10T10:40:50+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 34 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0025s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: sing_path E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2018-07-10T10:41:03+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 34 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0035s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: sing_path E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-10T10:42:07+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 34 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0025s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: sing_path E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000500s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001500s ]
+
+[ 2018-07-10T10:42:08+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 34 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0025s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: sing_path E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000500s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-10T10:42:08+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 34 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0015s ]
+NOTIC: [8] Undefined variable: sing_path E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2018-07-10T10:42:08+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 34 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: sing_path E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2018-07-10T10:42:37+08:00 ] 127.0.0.1 /admin.php?c=menu&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: menus E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\31553d7bb41170a30982ff9dddd5d67e.php 第 171 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-10T10:43:14+08:00 ] 127.0.0.1 /admin.php?c=menu&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0025s ]
+SQL: INSERT INTO `cms_menu` (`name`,`type`,`m`,`c`,`f`,`status`) VALUES ('公司新闻','0','home','index','index','1') [ RunTime:0.0005s ]
+
+[ 2018-07-10T10:43:15+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 34 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: sing_path E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000500s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2018-07-10T10:43:19+08:00 ] 127.0.0.1 /admin.php?c=menu&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: menus E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\31553d7bb41170a30982ff9dddd5d67e.php 第 171 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2018-07-10T10:43:38+08:00 ] 127.0.0.1 /admin.php?c=menu&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0040s ]
+SQL: INSERT INTO `cms_menu` (`name`,`type`,`m`,`c`,`f`,`status`) VALUES ('项目展示','0','home','index','index','1') [ RunTime:0.0005s ]
+
+[ 2018-07-10T10:43:39+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 34 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: sing_path E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2018-07-10T10:44:16+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 34 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: sing_path E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-10T10:46:05+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 34 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 0,3   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: sing_path E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+
+[ 2018-07-10T10:46:13+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 34 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 0,3   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: sing_path E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000500s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+
+[ 2018-07-10T10:46:25+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 34 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 0,3   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: sing_path E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000500s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-10T10:54:37+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: p E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 34 行.
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 0,2   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: sing_path E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-10T10:54:41+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Menu&a=index&p=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 2,2   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: sing_path E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-10T10:54:44+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Menu&a=index&p=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 0,2   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: sing_path E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-10T10:54:54+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Menu&a=index&p=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 0,3   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: sing_path E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2018-07-10T11:02:30+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Menu&a=index&p=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 0,3   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: sing_path E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2018-07-10T11:03:12+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Menu&a=index&p=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 0,3   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: sing_path E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-10T11:03:17+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Menu&a=index&p=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 0,3   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: sing_path E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-10T11:03:43+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Menu&a=index&p=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 0,3   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: sing_path E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-10T11:08:18+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Menu&a=index&p=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: pageSize E:\php\WWW\cms3.2\Application\Admin\Controller\MenuController.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY menu_id desc LIMIT 0,3   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: sing_path E:\php\WWW\cms3.2\ThinkPHP\Common\functions.php 第 991 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: nav E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 149 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 163 行.
+NOTIC: [8] Undefined variable: type E:\php\WWW\cms3.2\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+

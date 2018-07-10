@@ -23,6 +23,8 @@
         <!-- JavaScript -->
     <script src="./Public/js/jquery.js"></script>
     <script src="./Public/js/bootstrap.js"></script>
+    <script src="./Public/js/dialog/layer.js"></script>
+<script src="./Public/js/dialog.js"></script>
 
     <!-- Page Specific Plugins -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
@@ -198,7 +200,7 @@
                                 <td><?php echo ($menu["name"]); ?></td>
                                 <td><?php echo ($menu["m"]); ?></td>
                                 <td><?php echo (getMenuType($menu["type"])); ?></td>
-                                <td><?php echo (status($menu["status"])); ?></td>
+                                <td><?php echo (Status($menu["status"])); ?></td>
                                 <td><span class="glyphicon glyphicon-edit" aria-hidden="true" id="singcms-edit" attr-id="<?php echo ($menu["menu_id"]); ?>"></span>    <a href="javascript:void(0)" attr-id="<?php echo ($menu["menu_id"]); ?>" id="singcms-delete"  attr-a="menu" attr-message="删除"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a></td>
                             </tr><?php endforeach; endif; else: echo "" ;endif; ?>
 

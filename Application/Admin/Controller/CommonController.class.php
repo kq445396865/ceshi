@@ -8,7 +8,7 @@ use Think\Controller;
  */
 class CommonController extends Controller {
        
-
+    
        public function __construct() {
          
             parent::__construct();
@@ -35,9 +35,6 @@ class CommonController extends Controller {
             return false;
 
        }
-
-
-
 
        private function _init() {
             $isLogin = $this->isLogin();
