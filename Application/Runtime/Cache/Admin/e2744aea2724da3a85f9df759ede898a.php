@@ -1,5 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?>
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -25,14 +24,13 @@
     <script src="./Public/js/bootstrap.js"></script>
     <script src="./Public/js/dialog/layer.js"></script>
     <script src="./Public/js/dialog.js"></script>
-    <script src="./Public/js/party/jquery.uploadify.js"></script>
+    <script src="./Public/js/party/jquery.uploadify.min.js"></script>
 
   </head>
 <body>
-
 <div id="wrapper">
 
-         <!-- Sidebar -->
+       <!-- Sidebar -->
       <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -117,117 +115,143 @@
 
       </nav>
 
-
-    <div id="page-wrapper">
+  <script src="/Public/js/kindeditor/kindeditor-all.js"></script>
+  <div id="page-wrapper">
 
     <div class="container-fluid">
 
-        <!-- Page Heading -->
-        <div class="row">
-            <div class="col-lg-12">
+      <!-- Page Heading -->
+      <div class="row">
+        <div class="col-lg-12">
 
-                <ol class="breadcrumb">
-                    <li>
-                        <i class="fa fa-dashboard"></i>  <a href="/admin.php?c=menu">菜单管理</a>
-                    </li>
-                    <li class="active">
-                        <i class="fa fa-edit"></i> 添加
-                    </li>
-                </ol>
-            </div>
+          <ol class="breadcrumb">
+            <li>
+              <i class="fa fa-dashboard"></i>  <a href="/admin.php?c=content">文章管理</a>
+            </li>
+            <li class="active">
+              <i class="fa fa-edit"></i> 文章添加
+            </li>
+          </ol>
         </div>
-        <!-- /.row -->
+      </div>
+      <!-- /.row -->
 
-        <div class="row">
-            <div class="col-lg-6">
-
-                <form class="form-horizontal" id="singcms-form">
-                    <div class="form-group">
-                        <label for="inputname" class="col-sm-2 control-label">菜单名:</label>
-                        <div class="col-sm-5">
-                            <input type="text" name="name" class="form-control" id="inputname" placeholder="请填写菜单名">
-                        </div>
-                    </div>
-                    <!--<div class="form-group">
-                        <label for="inputname" class="col-sm-2 control-label">父类菜单ID:</label>
-                        <div class="col-sm-5">
-                            <select class="form-control" name="parentid">
-                                <option value="0">一级菜单</option>
-                                <?php if(is_array($menus)): $i = 0; $__LIST__ = $menus;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$parent): $mod = ($i % 2 );++$i;?><option value="<?php echo ($parent["menu_id"]); ?>"><?php echo ($parent["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
-                            </select>
-                        </div>
-                    </div>-->
-                    <div class="form-group">
-                        <label for="inputPassword3" class="col-sm-2 control-label">菜单类型:</label>
-                        <div class="col-sm-5">
-                            <input type="radio" name="type" id="optionsRadiosInline1" value="1" checked> 后台菜单
-                            <input type="radio" name="type" id="optionsRadiosInline2" value="0"> 前端栏目
-                        </div>
-
-                    </div>
-                    <div class="form-group">
-                        <label for="inputPassword3" class="col-sm-2 control-label">模块名:</label>
-                        <div class="col-sm-5">
-                            <input type="text" class="form-control" name="m" id="inputPassword3" placeholder="模块名如admin">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="inputPassword3" class="col-sm-2 control-label">控制器:</label>
-                        <div class="col-sm-5">
-                            <input type="text" class="form-control" name="c" id="inputPassword3" placeholder="控制器如index">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="inputPassword3" class="col-sm-2 control-label">方法:</label>
-                        <div class="col-sm-5">
-                            <input type="text" class="form-control" name="f" id="inputPassword3" placeholder="方法名如index">
-                        </div>
-                    </div>
-                    <!--<div class="form-group">
-                        <label for="inputPassword3" class="col-sm-2 control-label">是否为前台菜单:</label>
-                        <div class="col-sm-5">
-                            <input type="radio" name="type" id="optionsRadiosInline1" value="0" checked> 否
-                            <input type="radio" name="type" id="optionsRadiosInline2" value="1"> 是
-                        </div>
-
-                    </div>-->
-
-                    <div class="form-group">
-                        <label for="inputPassword3" class="col-sm-2 control-label">状态:</label>
-                        <div class="col-sm-5">
-                            <input type="radio" name="status" id="optionsRadiosInline1" value="1" checked> 开启
-                            <input type="radio" name="status" id="optionsRadiosInline2" value="0"> 关闭
-                        </div>
-
-                    </div>
-
-                    <div class="form-group">
-                        <div class="col-sm-offset-2 col-sm-10">
-                            <button type="button" class="btn btn-default" id="singcms-button-submit">提交</button>
-                        </div>
-                    </div>
-                </form>
+      <div class="row">
+        <div class="col-lg-6">
+          <form class="form-horizontal" id="singcms-form">
+            <div class="form-group">
+              <label for="inputname" class="col-sm-2 control-label">标题:</label>
+              <div class="col-sm-5">
+                <input type="text" name="title" class="form-control" id="inputname" placeholder="请填写标题">
+              </div>
+            </div>
+<!--             <div class="form-group">
+  <label for="inputname" class="col-sm-2 control-label">短标题:</label>
+  <div class="col-sm-5">
+    <input type="text" name="small_title" class="form-control" id="inputname" placeholder="请填写短标题">
+  </div>
+</div> -->
 
 
+
+            <div class="form-group">
+              <label for="inputname" class="col-sm-2 control-label">缩图:</label>
+              <div class="col-sm-5">
+                <input id="file_upload"  type="file" multiple="true">
+                <img style="display: none" id="upload_org_code_img" src="" width="150" height="150">
+                <input id="file_upload_image" name="thumb" type="hidden" multiple="true" value="">
+              </div>
             </div>
 
+
+
+   <!--          <div class="form-group">
+     <label for="inputname" class="col-sm-2 control-label">标题颜色:</label>
+     <div class="col-sm-5">
+       <select class="form-control" name="title_font_color">
+         <option value="">==请选择颜色==</option>
+           <?php if(is_array($titleFontColor)): foreach($titleFontColor as $key=>$color): ?><option value="<?php echo ($key); ?>"><?php echo ($color); ?></option><?php endforeach; endif; ?>
+       </select>
+     </div>
+   </div> -->
+            <div class="form-group">
+              <label for="inputname" class="col-sm-2 control-label">所属栏目:</label>
+              <div class="col-sm-5">
+                <select class="form-control" name="catid">
+                    <option value="">请选择栏目</option>
+                  <?php if(is_array($webSiteMenu)): foreach($webSiteMenu as $key=>$sitenav): ?><option value="<?php echo ($sitenav["menu_id"]); ?>"><?php echo ($sitenav["name"]); ?></option><?php endforeach; endif; ?>
+                </select>
+              </div>
+            </div>
+<!-- 
+            <div class="form-group">
+              <label for="inputname" class="col-sm-2 control-label">来源:</label>
+              <div class="col-sm-5">
+                <select class="form-control" name="copyfrom">
+                  <?php if(is_array($copyfrom)): foreach($copyfrom as $key=>$cfrom): ?><option value="<?php echo ($key); ?>"><?php echo ($cfrom); ?></option><?php endforeach; endif; ?>
+                </select>
+              </div>
+            </div> -->
+
+            <div class="form-group">
+              <label for="inputPassword3" class="col-sm-2 control-label">内容:</label>
+              <div class="col-sm-5">
+                <textarea class="input js-editor" id="editor_singcms" name="content" rows="20" ></textarea>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputPassword3" class="col-sm-2 control-label">描述:</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" name="description" id="inputPassword3" placeholder="描述">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputPassword3" class="col-sm-2 control-label">关键字:</label>
+              <div class="col-sm-5">
+                <input type="text" class="form-control" name="keywords" id="inputPassword3" placeholder="请填写关键词">
+              </div>
+            </div>
+
+
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <button type="button" class="btn btn-default" id="singcms-button-submit">提交</button>
+              </div>
+            </div>
+          </form>
+
+
         </div>
-        <!-- /.row -->
+
+      </div>
+      <!-- /.row -->
 
     </div>
     <!-- /.container-fluid -->
 
-</div>
-<!-- /#page-wrapper -->
+  </div>
+  <!-- /#page-wrapper -->
 
 </div>
-<!-- /#wrapper -->
-<!-- Morris Charts JavaScript -->
 <script>
-    var SCOPE = {
-        'save_url' : '/admin.php?c=menu&a=add',
-        'jump_url' : '/admin.php?c=menu',
-    }
+  var SCOPE = {
+    'save_url' : '/admin.php?c=content&a=add',
+    'jump_url' : '/admin.php?c=content',
+    'ajax_upload_image_url' : '/admin.php?c=image&a=ajaxuploadimage',
+    'ajax_upload_swf' : '/Public/js/party/uploadify.swf',
+  };
+
+</script>
+<!-- /#wrapper -->
+<script src="/Public/js/admin/image.js"></script>
+<script>
+  // 6.2
+  KindEditor.ready(function(K) {
+    window.editor = K.create('#editor_singcms',{
+      uploadJson : '/admin.php?c=image&a=kindupload',
+      afterBlur : function(){this.sync();}, //
+    });
+  });
 </script>
 <script type="text/javascript" src="./Public/js/admin/common.js"></script>
 

@@ -24,12 +24,9 @@
     <script src="./Public/js/jquery.js"></script>
     <script src="./Public/js/bootstrap.js"></script>
     <script src="./Public/js/dialog/layer.js"></script>
-<script src="./Public/js/dialog.js"></script>
+    <script src="./Public/js/dialog.js"></script>
+    <script src="./Public/js/party/jquery.uploadify.min.js"></script>
 
-    <!-- Page Specific Plugins -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-    <script src="./Public/js/tablesorter/jquery.tablesorter.js"></script>
-    <script src="./Public/js/tablesorter/tables.js"></script>
   </head>
 <body>
 
@@ -47,26 +44,14 @@
           </button>
           <a class="navbar-brand" href="index.html">Qicms</a>
         </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
+        <?php
+ $navs = D("Menu")->getAdminMenus(); $index = 'index'; ?>
+       <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-ex1-collapse">
           <ul class="nav navbar-nav side-nav">
-            <li class="active"><a href="/admin.php?c=index"><i class="fa fa-dashboard"></i>首页</a></li>
-            <li><a href="/admin.php?c=menu"><i class="fa fa-bar-chart-o"></i> 菜单管理</a></li>
-            <li><a href="tables.html"><i class="fa fa-table"></i> Tables</a></li>
-            <li><a href="forms.html"><i class="fa fa-edit"></i> Forms</a></li>
-            <li><a href="typography.html"><i class="fa fa-font"></i> Typography</a></li>
-            <li><a href="bootstrap-elements.html"><i class="fa fa-desktop"></i> Bootstrap Elements</a></li>
-            <li><a href="bootstrap-grid.html"><i class="fa fa-wrench"></i> Bootstrap Grid</a></li>
-            <li><a href="blank-page.html"><i class="fa fa-file"></i> Blank Page</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-caret-square-o-down"></i> Dropdown <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Dropdown Item</a></li>
-                <li><a href="#">Another Item</a></li>
-                <li><a href="#">Third Item</a></li>
-                <li><a href="#">Last Item</a></li>
-              </ul>
-            </li>
+            <li <?php echo (getActive($index)); ?>><a href="/admin.php?c=index"><i class="fa fa-dashboard"></i>首页</a></li>
+           <?php if(is_array($navs)): $i = 0; $__LIST__ = $navs;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$nav): $mod = ($i % 2 );++$i;?><li <?php echo (getActive($nav["c"])); ?>><a href="<?php echo (getAdminMenusUrl($nav)); ?>"><i class="fa fa-bar-chart-o"></i><?php echo ($nav["name"]); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
+           
           </ul>
 
           <ul class="nav navbar-nav navbar-right navbar-user">
@@ -158,11 +143,11 @@
                 <div class="input-group">
                     <span class="input-group-addon">类型</span>
                     <select class="form-control" name="type">
-                        <option value='' >请选择类型</option>
+                        <option value=''>请选择类型</option>
 
                         <option value="1" <?php if($type == 1): ?>selected="selected"<?php endif; ?>>后台菜单</option>
                         <option value="0" <?php if($type == 0): ?>selected="selected"<?php endif; ?>>前端导航</option>
-                    <lect>
+                    <select>
                 </div>
 
                 <input type="hidden" name="c" value="menu"/>
@@ -201,7 +186,10 @@
                                 <td><?php echo ($menu["m"]); ?></td>
                                 <td><?php echo (getMenuType($menu["type"])); ?></td>
                                 <td><?php echo (Status($menu["status"])); ?></td>
-                                <td><span class="glyphicon glyphicon-edit" aria-hidden="true" id="singcms-edit" attr-id="<?php echo ($menu["menu_id"]); ?>"></span>    <a href="javascript:void(0)" attr-id="<?php echo ($menu["menu_id"]); ?>" id="singcms-delete"  attr-a="menu" attr-message="删除"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a></td>
+                                <td>
+                                  <span class="glyphicon glyphicon-edit" aria-hidden="true" id="singcms-edit" attr-id="<?php echo ($menu["menu_id"]); ?>"></span>    
+                                  <a href="javascript:void(0)" attr-id="<?php echo ($menu["menu_id"]); ?>" id="singcms-delete"  attr-a="menu" attr-message="删除"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a>
+                                </td>
                             </tr><?php endforeach; endif; else: echo "" ;endif; ?>
 
                         </tbody>
@@ -213,7 +201,7 @@
                         </ul>
                     </nav>
                     <div>
-                        <button  id="button-listorder" type="button" class="btn btn-primary dropdown-toggle" ><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>更新排序 </button>
+                        <button  id="button-listorder" type="button" class="btn btn-primary dropdown-toggle" ><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>更新排序</button>
                     </div>
                 </div>
             </div>
@@ -235,6 +223,9 @@
 <script>
    var SCOPE = {
         'add_url' : '/admin.php?c=menu&a=add',
+        'edit_url' : '/admin.php?c=menu&a=edit',
+        'set_status_url' : '/admin.php?c=menu&a=setStatus',
+        'listorder_url' : '/admin.php?c=menu&a=listorder',
    }
 </script>
 <script type="text/javascript" src="./Public/js/admin/common.js"></script>

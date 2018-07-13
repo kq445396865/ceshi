@@ -23,12 +23,9 @@
     <script src="./Public/js/jquery.js"></script>
     <script src="./Public/js/bootstrap.js"></script>
     <script src="./Public/js/dialog/layer.js"></script>
-<script src="./Public/js/dialog.js"></script>
+    <script src="./Public/js/dialog.js"></script>
+    <script src="./Public/js/party/jquery.uploadify.min.js"></script>
 
-    <!-- Page Specific Plugins -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-    <script src="./Public/js/tablesorter/jquery.tablesorter.js"></script>
-    <script src="./Public/js/tablesorter/tables.js"></script>
   </head>
   <body>
 
@@ -45,26 +42,14 @@
           </button>
           <a class="navbar-brand" href="index.html">Qicms</a>
         </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
+        <?php
+ $navs = D("Menu")->getAdminMenus(); $index = 'index'; ?>
+       <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-ex1-collapse">
           <ul class="nav navbar-nav side-nav">
-            <li class="active"><a href="/admin.php?c=index"><i class="fa fa-dashboard"></i>首页</a></li>
-            <li><a href="/admin.php?c=menu"><i class="fa fa-bar-chart-o"></i> 菜单管理</a></li>
-            <li><a href="tables.html"><i class="fa fa-table"></i> Tables</a></li>
-            <li><a href="forms.html"><i class="fa fa-edit"></i> Forms</a></li>
-            <li><a href="typography.html"><i class="fa fa-font"></i> Typography</a></li>
-            <li><a href="bootstrap-elements.html"><i class="fa fa-desktop"></i> Bootstrap Elements</a></li>
-            <li><a href="bootstrap-grid.html"><i class="fa fa-wrench"></i> Bootstrap Grid</a></li>
-            <li><a href="blank-page.html"><i class="fa fa-file"></i> Blank Page</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-caret-square-o-down"></i> Dropdown <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Dropdown Item</a></li>
-                <li><a href="#">Another Item</a></li>
-                <li><a href="#">Third Item</a></li>
-                <li><a href="#">Last Item</a></li>
-              </ul>
-            </li>
+            <li <?php echo (getActive($index)); ?>><a href="/admin.php?c=index"><i class="fa fa-dashboard"></i>首页</a></li>
+           <?php if(is_array($navs)): $i = 0; $__LIST__ = $navs;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$nav): $mod = ($i % 2 );++$i;?><li <?php echo (getActive($nav["c"])); ?>><a href="<?php echo (getAdminMenusUrl($nav)); ?>"><i class="fa fa-bar-chart-o"></i><?php echo ($nav["name"]); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
+           
           </ul>
 
           <ul class="nav navbar-nav navbar-right navbar-user">

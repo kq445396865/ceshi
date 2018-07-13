@@ -31,11 +31,11 @@
                 <div class="input-group">
                     <span class="input-group-addon">类型</span>
                     <select class="form-control" name="type">
-                        <option value='' >请选择类型</option>
+                        <option value=''>请选择类型</option>
 
                         <option value="1" <if condition="$type eq 1">selected="selected"</if>>后台菜单</option>
                         <option value="0" <if condition="$type eq 0">selected="selected"</if>>前端导航</option>
-                    <lect>
+                    <select>
                 </div>
 
                 <input type="hidden" name="c" value="menu"/>
@@ -75,7 +75,10 @@
                                 <td>{$menu.m}</td>
                                 <td>{$menu.type|getMenuType}</td>
                                 <td>{$menu.status|Status}</td>
-                                <td><span class="glyphicon glyphicon-edit" aria-hidden="true" id="singcms-edit" attr-id="{$menu.menu_id}"></span>    <a href="javascript:void(0)" attr-id="{$menu.menu_id}" id="singcms-delete"  attr-a="menu" attr-message="删除"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a></td>
+                                <td>
+                                  <span class="glyphicon glyphicon-edit" aria-hidden="true" id="singcms-edit" attr-id="{$menu.menu_id}"></span>    
+                                  <a href="javascript:void(0)" attr-id="{$menu.menu_id}" id="singcms-delete"  attr-a="menu" attr-message="删除"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a>
+                                </td>
                             </tr>
                         </volist>
 
@@ -88,7 +91,7 @@
                         </ul>
                     </nav>
                     <div>
-                        <button  id="button-listorder" type="button" class="btn btn-primary dropdown-toggle" ><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>更新排序 </button>
+                        <button  id="button-listorder" type="button" class="btn btn-primary dropdown-toggle" ><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>更新排序</button>
                     </div>
                 </div>
             </div>
@@ -110,6 +113,9 @@
 <script>
    var SCOPE = {
         'add_url' : '/admin.php?c=menu&a=add',
+        'edit_url' : '/admin.php?c=menu&a=edit',
+        'set_status_url' : '/admin.php?c=menu&a=setStatus',
+        'listorder_url' : '/admin.php?c=menu&a=listorder',
    }
 </script>
 <include file="Index/footer" />
