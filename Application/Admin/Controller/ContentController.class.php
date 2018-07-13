@@ -30,7 +30,7 @@ class ContentController extends CommonController
 			}
 			$newsId = D("News")->insert($_POST);
 			if($newsId){
-                 $newsContentData = $_POST['content'];
+                 $newsContentData['content'] = $_POST['content'];
                  $newsContentData['news_id'] = $newsId;
                  $contentId = D("NewsContent")->insert($newsContentData);
                  if($contentId){
