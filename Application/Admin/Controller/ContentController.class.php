@@ -9,25 +9,52 @@ use Think\Controller;
 class ContentController extends CommonController
 {
 	public function index(){
+        $conds = array();
+        if($_GET['title']){
+        	$conds['title'] = $_GET['title'];
+        }
+        if($_GET['catid']){
+            $conds['catid'] = intval($_GET['catid']);
+        }
+
+        $page = $_REQUEST['p'] ? $_REQUEST['p'] : 1;
+        $pageSize = $_REQUEST['pageSize'] ? $_REQUEST['pageSize'] : 5;
+		$news = D("News")->getNews($conds,$page,$pageSize);
+		$newsCount = D("News")->getNewsCount($conds);
+
+		$res = new \Think\Page($newsCount,$pageSize);
+		$pageRes = $res->show();
+		$this->assign('news',$news);
+		$this->assign('pageRes',$pageRes);
+		$this->assign('result',array(
+            'catid' => $conds['catid'],
+            'title' => $conds['title'],
+
+		));
+
+		$webSiteMenu = D("Menu")->getNavMenus();
+		$this->assign('webSiteMenu',$webSiteMenu);
 		$this->display();
 	}
 
-
-
-
-
 	//添加文章
+
 	public function add(){
 		
-
 		if($_POST){
 
 			if(!isset($_POST['title']) || !$_POST['title']){
 				 return show(0,'文章标题不能为空');
 			}
 			if(!isset($_POST['content']) || !$_POST['content']){
+                 return show(0,'所属栏目不能为空');
+			}
+			if(!isset($_POST['content']) || !$_POST['content']){
                  return show(0,'文章内容不能为空');
 			}
+            if($_POST['news_id']){
+            	 return $this->save($_POST);
+            }
 			$newsId = D("News")->insert($_POST);
 			if($newsId){
                  $newsContentData['content'] = $_POST['content'];
@@ -48,6 +75,56 @@ class ContentController extends CommonController
 			$this->display();
 		}
 		
+	}
+
+	//修改文章
+	public function edit(){
+		$newsId = $_GET['id'];
+        if(!$newsId){
+
+           $this->redirect('/admin.php?c=content');
+
+        }
+        $news = D("News")->find($newsId);
+
+        if(!$news){
+
+        	$this->redirect('/admin.php?c=content');
+
+        }
+        $newsCon = D("NewsContent")->find($newsId);
+
+        if($newsCon){
+
+        	$news['content'] = $newsCon['content'];
+
+        }
+        $webSiteMenu = D("Menu")->getNavMenus();
+        $this->assign('webSiteMenu',$webSiteMenu);
+        $this->assign('news',$news);
+		$this->display();
+	}
+
+	//更新文章
+	public function save($data){
+		$newsId = $data['news_id'];
+		unset($data['news_id']);
+        try {
+	        	$id = D("News")->UpdataNewsById($newsId,$data);
+				$newsContentData['content'] = $data['content'];
+				$conId = D("NewsContent")->UpdataNewsContentById($newsId,$newsContentData);
+				if($id===false || $conId===false){
+					return show(0,'更新失败');
+				}
+			    return show(1,'更新成功');
+
+        } catch (Exception $e) {
+
+        	return show(0,$e->getMessage());
+        }
+		
+
+
 	}
 
 }

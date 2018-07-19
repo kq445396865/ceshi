@@ -21,7 +21,7 @@ class MenuController extends CommonController {
     	 $menusCount = D("Menu")->getMenusCount($data);
 
     	 
-    	 $res = new \Think\Page($menusCount, $pageSize);
+    	   $res = new \Think\Page($menusCount, $pageSize);
          $pageRes = $res->show();
          $this -> assign('pageRes', $pageRes);
          $this -> assign('menus', $menus);
@@ -74,6 +74,7 @@ class MenuController extends CommonController {
 	           return show(0,'更新失败');
 	       	}
 	       	return show(1,'更新成功');
+          
        }catch(Exception $e){
            
            return show(0,$e->getMessage());

@@ -20,9 +20,15 @@
       return md5($password . C('MD5_PRE'));
   }
 
+
+
   function getMenuType($type){
       return $type == 1 ? '后台栏目' : '前台导航' ;
   }
+
+
+
+
   function Status($status){
       if($status == 0){
             $str = '关闭';
@@ -66,4 +72,25 @@
   function getLoginUserName(){
        return $_SESSION['adminUser']['userName'] ? $_SESSION['adminUser']['userName'] : '';
   }
+
+
+  //判断是否有图片
+  function isThumb($thumb){
+      if($thumb){
+           return '<span style="color:red"> 有</span>';
+      }
+        return '无';
+  }
+
+  function getCatName($navs,$id){
+      foreach($navs as $nav){
+          $navList[$nav['menu_id']] = $nav['name'];
+      }
+
+      return isset($navList[$id]) ? $navList[$id] : '';
+  }
+
+
+
+
 ?>

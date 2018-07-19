@@ -1,3 +1,4 @@
+
 <include file="Index/header" />
 <body>
 <div id="wrapper">
@@ -33,7 +34,9 @@
               <select class="form-control" name="catid">
                 <option value='' >全部分类</option>
                 <foreach name="webSiteMenu" item="sitenav">
-                  <option value="{$sitenav.menu_id}" >{$sitenav.name}</option>
+
+                  <option value="{$sitenav.menu_id}" <if condition="$sitenav.menu_id eq $result['catid']">selected="selected"</if>>{$sitenav.name}</option>
+
                 </foreach>
               </select>
             </div>
@@ -42,7 +45,7 @@
           <input type="hidden" name="a" value="index"/>
           <div class="col-md-3">
             <div class="input-group">
-              <input class="form-control" name="title" type="text" value="" placeholder="文章标题" />
+              <input class="form-control" name="title" type="text" value="{$result['title']}" placeholder="文章标题" />
                 <span class="input-group-btn">
                   <button id="sub_data" type="submit" class="btn btn-primary"><i class="glyphicon glyphicon-search"></i></button>
                 </span>
@@ -78,7 +81,7 @@
                     <td>{$new.news_id}</td>
                     <td>{$new.title}</td>
                     <td>{$new.catid|getCatName=$webSiteMenu,###}</td>
-                    <td>{$new.copyfrom|getCopyFromById}</td>
+                    <td>{$new.copyfrom}</td>
                     <td>
                       {$new.thumb|isThumb}
                     </td>
@@ -89,7 +92,6 @@
                         <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
                       </a>
                       <a target="_blank" href="/index.php?c=detail&a=view&id={$new.news_id}" class="sing_cursor glyphicon glyphicon-eye-open" aria-hidden="true"  ></a>
-
                     </td>
                   </tr>
                 </volist>
@@ -98,8 +100,8 @@
               </table>
               <nav>
 
-              <ul >
-                {$pageres}
+              <ul>
+                {$pageRes}
               </ul>
 
             </nav>
@@ -136,6 +138,7 @@
 <script>
   var SCOPE = {
        'add_url' : '/admin.php?c=content&a=add',
+      'edit_url' : '/admin.php?c=content&a=edit',
   }
 </script>
 <include file="Index/footer" />

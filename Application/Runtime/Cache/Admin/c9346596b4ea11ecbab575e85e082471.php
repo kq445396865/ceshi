@@ -1,5 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?>
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -116,9 +115,10 @@
 
       </nav>
 
+  <script src="/Public/js/kindeditor/kindeditor-all.js"></script>
   <div id="page-wrapper">
 
-    <div class="container-fluid" >
+    <div class="container-fluid">
 
       <!-- Page Heading -->
       <div class="row">
@@ -129,107 +129,100 @@
               <i class="fa fa-dashboard"></i>  <a href="/admin.php?c=content">文章管理</a>
             </li>
             <li class="active">
-              <i class="fa fa-table"></i>文章列表
+              <i class="fa fa-edit"></i> 文章添加
             </li>
           </ol>
         </div>
       </div>
       <!-- /.row -->
-      <div >
-        <button  id="button-add" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>添加 </button>
-      </div>
-      <div class="row">
-        <form action="/admin.php" method="get">
-          <div class="col-md-3">
-            <div class="input-group">
-              <span class="input-group-addon">栏目</span>
-              <select class="form-control" name="catid">
-                <option value='' >全部分类</option>
-                <?php if(is_array($webSiteMenu)): foreach($webSiteMenu as $key=>$sitenav): ?><option value="<?php echo ($sitenav["menu_id"]); ?>" <?php if($sitenav["menu_id"] == $result['catid']): ?>selected="selected"<?php endif; ?>><?php echo ($sitenav["name"]); ?></option><?php endforeach; endif; ?>
-              </select>
-            </div>
-          </div>
-          <input type="hidden" name="c" value="content"/>
-          <input type="hidden" name="a" value="index"/>
-          <div class="col-md-3">
-            <div class="input-group">
-              <input class="form-control" name="title" type="text" value="<?php echo ($result['title']); ?>" placeholder="文章标题" />
-                <span class="input-group-btn">
-                  <button id="sub_data" type="submit" class="btn btn-primary"><i class="glyphicon glyphicon-search"></i></button>
-                </span>
-            </div>
-          </div>
-        </form>
-      </div>
+
       <div class="row">
         <div class="col-lg-6">
-          <h3></h3>
-          <div class="table-responsive">
-            <form id="singcms-listorder">
-              <table class="table table-bordered table-hover singcms-table">
-                <thead>
-                <tr>
-                  <th id="singcms-checkbox-all" width="10"><input type="checkbox"/></th>
-                  <th width="14">排序</th><!--6.7-->
-                  <th>id</th>
-                  <th>标题</th>
-                  <th>栏目</th>
-                  <th>来源</th>
-                  <th>封面图</th>
-                  <th>时间</th>
-                  <th>状态</th>
-                  <th>操作</th>
-                </tr>
-                </thead>
-                <tbody>
-                <?php if(is_array($news)): $i = 0; $__LIST__ = $news;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$new): $mod = ($i % 2 );++$i;?><tr>
-                    <td><input type="checkbox" name="pushcheck" value="<?php echo ($new["news_id"]); ?>"></td>
-                    <td><input size=4 type='text'  name='listorder[<?php echo ($new["news_id"]); ?>]' value="<?php echo ($new["listorder"]); ?>"/></td><!--6.7-->
-                    <td><?php echo ($new["news_id"]); ?></td>
-                    <td><?php echo ($new["title"]); ?></td>
-                    <td><?php echo (getCatName($webSiteMenu,$new["catid"])); ?></td>
-                    <td><?php echo ($new["copyfrom"]); ?></td>
-                    <td>
-                      <?php echo (isThumb($new["thumb"])); ?>
-                    </td>
-                    <td><?php echo (date("Y-m-d H:i",$new["create_time"])); ?></td>
-                    <td><span  attr-status="<?php if($new['status'] == 1): ?>0<?php else: ?>1<?php endif; ?>"  attr-id="<?php echo ($new["news_id"]); ?>" class="sing_cursor singcms-on-off" id="singcms-on-off" ><?php echo (status($new["status"])); ?></span></td>
-                    <td><span class="sing_cursor glyphicon glyphicon-edit" aria-hidden="true" id="singcms-edit" attr-id="<?php echo ($new["news_id"]); ?>" ></span>
-                      <a href="javascript:void(0)" id="singcms-delete"  attr-id="<?php echo ($new["news_id"]); ?>"  attr-message="删除">
-                        <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
-                      </a>
-                      <a target="_blank" href="/index.php?c=detail&a=view&id=<?php echo ($new["news_id"]); ?>" class="sing_cursor glyphicon glyphicon-eye-open" aria-hidden="true"  ></a>
-                    </td>
-                  </tr><?php endforeach; endif; else: echo "" ;endif; ?>
 
-                </tbody>
-              </table>
-              <nav>
-
-              <ul>
-                <?php echo ($pageRes); ?>
-              </ul>
-
-            </nav>
-              <div>
-                <button  id="button-listorder" type="button" class="btn btn-primary dropdown-toggle" ><span class="glyphicon glyphicon-resize-vertical" aria-hidden="true"></span>更新排序</button>
+          <form class="form-horizontal" id="singcms-form">
+            <div class="form-group">
+              <label for="inputname" class="col-sm-2 control-label">标题:</label>
+              <div class="col-sm-5">
+                <input value="<?php echo ($news["title"]); ?>" type="text" name="title" class="form-control" id="inputname" placeholder="请填写标题">
               </div>
-            </form>
-            <div class="input-group">
-              <select class="form-control" name="position_id" id="select-push">
-                <option value="0">请选择推荐位进行推送</option>
-                <?php if(is_array($positions)): foreach($positions as $key=>$position): ?><option value="<?php echo ($position["id"]); ?>"><?php echo ($position["name"]); ?></option><?php endforeach; endif; ?>
-              </select>
-              <button id="singcms-push" type="button" class="btn btn-primary">推送</button>
             </div>
 
-          </div>
+<!--             <div class="form-group">
+  <label for="inputname" class="col-sm-2 control-label">短标题:</label>
+  <div class="col-sm-5">
+    <input value="<?php echo ($news["small_title"]); ?>" type="text" name="small_title" class="form-control" id="inputname" placeholder="请填写短标题">
+  </div>
+</div> -->
+
+            <div class="form-group">
+              <label for="inputname" class="col-sm-2 control-label">缩图:</label>
+              <div class="col-sm-5">
+                <input id="file_upload"  type="file" multiple="true" >
+                <img style="display: none" id="upload_org_code_img" src="<?php echo ($news["thumb"]); ?>" width="150" height="150">
+                <input id="file_upload_image" name="thumb" type="hidden" multiple="true" value="<?php echo ($news["thumb"]); ?>">
+              </div>
+            </div>
+            
+<!--             <div class="form-group">
+  <label for="inputname" class="col-sm-2 control-label">标题颜色:</label>
+  <div class="col-sm-5">
+    <select class="form-control" name="title_font_color">
+      <option value="">==请选择颜色==</option>
+        <?php if(is_array($titleFontColor)): foreach($titleFontColor as $key=>$color): ?><option value="<?php echo ($key); ?>" <?php if($key == $news['title_font_color']): ?>selected="selected"<?php endif; ?>><?php echo ($color); ?></option><?php endforeach; endif; ?>
+    </select>
+  </div>
+</div> -->
+            <div class="form-group">
+              <label for="inputname" class="col-sm-2 control-label">所属栏目:</label>
+              <div class="col-sm-5">
+                <select class="form-control" name="catid">
+
+                  <?php if(is_array($webSiteMenu)): foreach($webSiteMenu as $key=>$sitenav): ?><option value="<?php echo ($sitenav["menu_id"]); ?>" <?php if($sitenav['menu_id'] == $news['catid']): ?>selected="selected"<?php endif; ?>><?php echo ($sitenav["name"]); ?></option><?php endforeach; endif; ?>
+                </select>
+              </div>
+            </div>
+
+<!--             <div class="form-group">
+  <label for="inputname" class="col-sm-2 control-label">来源:</label>
+  <div class="col-sm-5">
+    <select class="form-control" name="copyfrom">
+      <?php if(is_array($copyfrom)): foreach($copyfrom as $key=>$cfrom): ?><option value="<?php echo ($key); ?>" <?php if($key == $news['copyfrom']): ?>selected="selected"<?php endif; ?>><?php echo ($cfrom); ?></option><?php endforeach; endif; ?>
+    </select>
+  </div>
+</div> -->
+
+            <div class="form-group">
+              <label for="inputPassword3" class="col-sm-2 control-label">内容:</label>
+              <div class="col-sm-5">
+                <textarea class="input js-editor" id="editor_singcms" name="content" rows="20" ><?php echo ($news["content"]); ?></textarea>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputPassword3" class="col-sm-2 control-label">描述:</label>
+              <div class="col-sm-9">
+                <input value="<?php echo ($news["description"]); ?>" type="text" class="form-control" name="description" id="inputPassword3" placeholder="描述">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputPassword3" class="col-sm-2 control-label">关键字:</label>
+              <div class="col-sm-5">
+                <input value="<?php echo ($news["keywords"]); ?>" type="text" class="form-control" name="keywords" id="inputPassword3" placeholder="请填写关键词">
+              </div>
+            </div>
+            <input type="hidden" name="news_id" value="<?php echo ($news["news_id"]); ?>"/>
+
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <button type="button" class="btn btn-default" id="singcms-button-submit">提交</button>
+              </div>
+            </div>
+          </form>
+
+
         </div>
 
       </div>
       <!-- /.row -->
-
-
 
     </div>
     <!-- /.container-fluid -->
@@ -238,11 +231,30 @@
   <!-- /#page-wrapper -->
 
 </div>
-<!-- /#wrapper -->
 <script>
   var SCOPE = {
-       'add_url' : '/admin.php?c=content&a=add',
-      'edit_url' : '/admin.php?c=content&a=edit',
+    'save_url' : '/admin.php?c=content&a=add',
+    'jump_url' : '/admin.php?c=content',
+    'ajax_upload_image_url' : '/admin.php?c=image&a=ajaxuploadimage',
+    'ajax_upload_swf' : '/Public/js/party/uploadify.swf',
+  };
+
+</script>
+<!-- /#wrapper -->
+<script src="/Public/js/admin/image.js"></script>
+<script>
+  // 6.2
+  KindEditor.ready(function(K) {
+    window.editor = K.create('#editor_singcms',{
+      uploadJson : '/admin.php?c=image&a=kindupload',
+      afterBlur : function(){this.sync();}, //
+    });
+  });
+</script>
+<script>
+  var thumb = "<?php echo ($news["thumb"]); ?>";
+  if(thumb) {
+    $("#upload_org_code_img").show();
   }
 </script>
 <script type="text/javascript" src="./Public/js/admin/common.js"></script>

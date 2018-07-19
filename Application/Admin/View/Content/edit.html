@@ -34,12 +34,14 @@
                 <input value="{$news.title}" type="text" name="title" class="form-control" id="inputname" placeholder="请填写标题">
               </div>
             </div>
-            <div class="form-group">
-              <label for="inputname" class="col-sm-2 control-label">短标题:</label>
-              <div class="col-sm-5">
-                <input value="{$news.small_title}" type="text" name="small_title" class="form-control" id="inputname" placeholder="请填写短标题">
-              </div>
-            </div>
+
+<!--             <div class="form-group">
+  <label for="inputname" class="col-sm-2 control-label">短标题:</label>
+  <div class="col-sm-5">
+    <input value="{$news.small_title}" type="text" name="small_title" class="form-control" id="inputname" placeholder="请填写短标题">
+  </div>
+</div> -->
+
             <div class="form-group">
               <label for="inputname" class="col-sm-2 control-label">缩图:</label>
               <div class="col-sm-5">
@@ -48,17 +50,18 @@
                 <input id="file_upload_image" name="thumb" type="hidden" multiple="true" value="{$news.thumb}">
               </div>
             </div>
-            <div class="form-group">
-              <label for="inputname" class="col-sm-2 control-label">标题颜色:</label>
-              <div class="col-sm-5">
-                <select class="form-control" name="title_font_color">
-                  <option value="">==请选择颜色==</option>
-                    <foreach name="titleFontColor" item="color">
-                      <option value="{$key}" <if condition="$key eq $news['title_font_color']">selected="selected"</if>>{$color}</option>
-                    </foreach>
-                </select>
-              </div>
-            </div>
+            
+<!--             <div class="form-group">
+  <label for="inputname" class="col-sm-2 control-label">标题颜色:</label>
+  <div class="col-sm-5">
+    <select class="form-control" name="title_font_color">
+      <option value="">==请选择颜色==</option>
+        <foreach name="titleFontColor" item="color">
+          <option value="{$key}" <if condition="$key eq $news['title_font_color']">selected="selected"</if>>{$color}</option>
+        </foreach>
+    </select>
+  </div>
+</div> -->
             <div class="form-group">
               <label for="inputname" class="col-sm-2 control-label">所属栏目:</label>
               <div class="col-sm-5">
@@ -71,17 +74,17 @@
               </div>
             </div>
 
-            <div class="form-group">
-              <label for="inputname" class="col-sm-2 control-label">来源:</label>
-              <div class="col-sm-5">
-                <select class="form-control" name="copyfrom">
-                  <foreach name="copyfrom" item="cfrom">
+<!--             <div class="form-group">
+  <label for="inputname" class="col-sm-2 control-label">来源:</label>
+  <div class="col-sm-5">
+    <select class="form-control" name="copyfrom">
+      <foreach name="copyfrom" item="cfrom">
 
-                    <option value="{$key}" <if condition="$key eq $news['copyfrom']">selected="selected"</if>>{$cfrom}</option>
-                  </foreach>
-                </select>
-              </div>
-            </div>
+        <option value="{$key}" <if condition="$key eq $news['copyfrom']">selected="selected"</if>>{$cfrom}</option>
+      </foreach>
+    </select>
+  </div>
+</div> -->
 
             <div class="form-group">
               <label for="inputPassword3" class="col-sm-2 control-label">内容:</label>

@@ -3,9 +3,6 @@ namespace Common\Model;
 use Think\Model;
 
 
-
-
-
 /**
  * 
  */
@@ -84,9 +81,10 @@ class MenuModel extends Model
           return $this->_db->where('menu_id='.$id)->save($data);
     }
 
-        //展示后台菜单
+    //展示后台菜单
     public function getAdminMenus(){
         $data = array(
+          
            'status' => array('neq',-1),
            'type' => 1,
         );
@@ -98,6 +96,7 @@ class MenuModel extends Model
     //获取前台菜单
     public function getNavMenus(){
         $data = array(
+
             'status' => array('neq',-1),
             'type' => 0,
            
