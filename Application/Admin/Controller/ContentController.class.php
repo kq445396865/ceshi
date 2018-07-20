@@ -123,11 +123,31 @@ class ContentController extends CommonController
         	return show(0,$e->getMessage());
         }
 		
+	}
 
+	//删除功能（改变栏目状态）
+	public function setStatus(){
+      try {
+      	  		if($_POST){
+					$id = $_POST['id'];
+					$status = $_POST['status'];
+					$res = D("News")->UpdataStatusById($id,$status);
+					if($res){
+						return show(1,'操作成功');
+					}
+					    return show(0,'操作失败'); 
+				}
+
+      } catch (Exception $e) {
+      	  
+      	  return show(0,$e->getMessage());
+      }
+
+         return show(0,'没有提交数据');
 
 	}
 
 }
 
 
- ?>
+ ?>	

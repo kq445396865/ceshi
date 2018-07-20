@@ -243,6 +243,7 @@
   var SCOPE = {
        'add_url' : '/admin.php?c=content&a=add',
       'edit_url' : '/admin.php?c=content&a=edit',
+      'set_status_url' : '/admin.php?c=content&a=setStatus',
   }
 </script>
 <script type="text/javascript" src="./Public/js/admin/common.js"></script>

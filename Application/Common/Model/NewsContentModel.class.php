@@ -61,6 +61,9 @@ class NewsContentModel extends Model{
 
         }
 
+
+
+
 }
 
  ?>
