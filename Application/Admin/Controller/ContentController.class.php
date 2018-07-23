@@ -79,6 +79,7 @@ class ContentController extends CommonController
 
 	//修改文章
 	public function edit(){
+
 		$newsId = $_GET['id'];
         if(!$newsId){
 
@@ -107,14 +108,20 @@ class ContentController extends CommonController
 
 	//更新文章
 	public function save($data){
+
 		$newsId = $data['news_id'];
+
 		unset($data['news_id']);
+
         try {
 	        	$id = D("News")->UpdataNewsById($newsId,$data);
 				$newsContentData['content'] = $data['content'];
 				$conId = D("NewsContent")->UpdataNewsContentById($newsId,$newsContentData);
+
 				if($id===false || $conId===false){
+
 					return show(0,'更新失败');
+
 				}
 			    return show(1,'更新成功');
 
@@ -127,11 +134,14 @@ class ContentController extends CommonController
 
 	//删除功能（改变栏目状态）
 	public function setStatus(){
+		
       try {
       	  		if($_POST){
+
 					$id = $_POST['id'];
 					$status = $_POST['status'];
 					$res = D("News")->UpdataStatusById($id,$status);
+
 					if($res){
 						return show(1,'操作成功');
 					}
@@ -148,6 +158,5 @@ class ContentController extends CommonController
 	}
 
 }
-
 
  ?>	
