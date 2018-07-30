@@ -40,7 +40,9 @@ class UploadImageModel extends Model{
             }
               
     	}else{
+
     		  return false;
+              
     	}
 
     	      

@@ -137,16 +137,16 @@ class ContentController extends CommonController
 		
       try {
       	  		if($_POST){
-
 					$id = $_POST['id'];
 					$status = $_POST['status'];
-					$res = D("News")->UpdataStatusById($id,$status);
 
+					$res = D("News")->UpdataStatusById($id,$status);
 					if($res){
 						return show(1,'操作成功');
 					}
 					    return show(0,'操作失败'); 
 				}
+
 
       } catch (Exception $e) {
       	  

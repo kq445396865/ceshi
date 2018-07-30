@@ -12,6 +12,11 @@ class NewsModel extends Model{
 		$this->_db = M("news");
 	}
 
+	public function select($data=array(),$limit=100){
+         $conditions = $data;
+         return $this->_db->where($conditions)->order('news_id desc')->limit($limit)->select();
+	}
+
 	public function insert($data = array()){
          if(!$data || !is_array($data)){
              return 0;
@@ -83,19 +88,24 @@ class NewsModel extends Model{
 
 
 
-	        public function UpdataStatusById($id,$status){
-              
+	public function UpdataStatusById($id,$status){
+
+              //判断id是否存在或者是数字     
               if(!$id || !is_numeric($id)){
+              	
                   throw_exception('ID不合法');
               }
-              if(!$status || !is_numeric($status)){
-                  throw_exception('状态不合法');
+
+              if(!is_numeric($status)){
+
+                  throw_exception('status不能为非数字');
               }
 
               $data['status'] = $status;
 
               return $this->_db->where('news_id='.$id)->save($data);
-        }
+    }
+
 }
 
 
