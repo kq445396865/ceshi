@@ -127,7 +127,7 @@
 
                 <ol class="breadcrumb">
                     <li>
-                        <i class="fa fa-dashboard"></i>  <a href="/admin.php?c=menu">菜单管理</a>
+                        <i class="fa fa-dashboard"></i>  <a href="/admin.php?c=menu">推荐位管理</a>
                     </li>
                     <li class="active">
                         <i class="fa fa-edit"></i> 添加
@@ -142,54 +142,19 @@
 
                 <form class="form-horizontal" id="singcms-form">
                     <div class="form-group">
-                        <label for="inputname" class="col-sm-2 control-label">菜单名:</label>
+                        <label for="inputname" class="col-sm-2 control-label">推荐位名:</label>
                         <div class="col-sm-5">
-                            <input type="text" name="name" class="form-control" id="inputname" placeholder="请填写菜单名">
+                            <input type="text" name="name" class="form-control" id="inputname" placeholder="请填写推荐位名">
                         </div>
                     </div>
-                    <!--<div class="form-group">
-                        <label for="inputname" class="col-sm-2 control-label">父类菜单ID:</label>
-                        <div class="col-sm-5">
-                            <select class="form-control" name="parentid">
-                                <option value="0">一级菜单</option>
-                                <?php if(is_array($menus)): $i = 0; $__LIST__ = $menus;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$parent): $mod = ($i % 2 );++$i;?><option value="<?php echo ($parent["menu_id"]); ?>"><?php echo ($parent["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
-                            </select>
-                        </div>
-                    </div>-->
+                    
                     <div class="form-group">
-                        <label for="inputPassword3" class="col-sm-2 control-label">菜单类型:</label>
+                        <label for="inputPassword3" class="col-sm-2 control-label">描述:</label>
                         <div class="col-sm-5">
-                            <input type="radio" name="type" id="optionsRadiosInline1" value="1" checked> 后台菜单
-                            <input type="radio" name="type" id="optionsRadiosInline2" value="0"> 前端栏目
-                        </div>
-
-                    </div>
-                    <div class="form-group">
-                        <label for="inputPassword3" class="col-sm-2 control-label">模块名:</label>
-                        <div class="col-sm-5">
-                            <input type="text" class="form-control" name="m" id="inputPassword3" placeholder="模块名如admin">
+                            <input type="text" class="form-control" name="description" id="inputPassword3" placeholder="描述">
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label for="inputPassword3" class="col-sm-2 control-label">控制器:</label>
-                        <div class="col-sm-5">
-                            <input type="text" class="form-control" name="c" id="inputPassword3" placeholder="控制器如index">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="inputPassword3" class="col-sm-2 control-label">方法:</label>
-                        <div class="col-sm-5">
-                            <input type="text" class="form-control" name="f" id="inputPassword3" placeholder="方法名如index">
-                        </div>
-                    </div>
-                    <!--<div class="form-group">
-                        <label for="inputPassword3" class="col-sm-2 control-label">是否为前台菜单:</label>
-                        <div class="col-sm-5">
-                            <input type="radio" name="type" id="optionsRadiosInline1" value="0" checked> 否
-                            <input type="radio" name="type" id="optionsRadiosInline2" value="1"> 是
-                        </div>
-
-                    </div>-->
+                    
 
                     <div class="form-group">
                         <label for="inputPassword3" class="col-sm-2 control-label">状态:</label>
@@ -224,8 +189,8 @@
 <!-- Morris Charts JavaScript -->
 <script>
     var SCOPE = {
-        'save_url' : '/admin.php?c=menu&a=add',
-        'jump_url' : '/admin.php?c=menu',
+        'save_url' : '/admin.php?c=position&a=add',
+        'jump_url' : '/admin.php?c=position',
     }
 </script>
 <script type="text/javascript" src="./Public/js/admin/common.js"></script>

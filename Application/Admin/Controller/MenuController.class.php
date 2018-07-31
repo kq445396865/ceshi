@@ -5,6 +5,7 @@ class MenuController extends CommonController {
 
 
         public function index(){
+          
          $data = array();
          if(isset($_REQUEST['type']) && in_array($_REQUEST['type'],array(0,1))){
               $data['type'] = intval($_REQUEST['type']);
@@ -46,7 +47,7 @@ class MenuController extends CommonController {
                  return $this -> save($_POST);
             }
             $menuId = D("Menu")->insert($_POST);
-            if(!$_POST){
+            if(!$menuId){
                 return show(0,'新增栏目失败');
             }
                 return show(1,'新增栏目成功');          

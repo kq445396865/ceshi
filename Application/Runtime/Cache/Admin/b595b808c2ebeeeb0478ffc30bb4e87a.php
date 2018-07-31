@@ -1,6 +1,6 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
@@ -12,21 +12,20 @@
     <link href="./Public/css/bootstrap.css" rel="stylesheet">
     <!-- Add custom CSS here -->
     <link href="./Public/css/sb-admin.css" rel="stylesheet">
-        <link href="./Public/css/plugins/morris.css" rel="stylesheet">
+    <link href="./Public/css/plugins/morris.css" rel="stylesheet">
     <link rel="stylesheet" href="./Public/font-awesome/css/font-awesome.min.css">
        <link href="/Public/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="/Public/css/sing/common.css" />
     <link rel="stylesheet" href="/Public/css/party/bootstrap-switch.css" />
     <link rel="stylesheet" type="text/css" href="/Public/css/party/uploadify.css">
     <!-- Page Specific CSS -->
-        <!-- JavaScript -->
+    <!-- JavaScript -->
     <script src="./Public/js/jquery.js"></script>
     <script src="./Public/js/bootstrap.js"></script>
     <script src="./Public/js/dialog/layer.js"></script>
     <script src="./Public/js/dialog.js"></script>
     <script src="./Public/js/party/jquery.uploadify.min.js"></script>
-
-  </head>
+</head>
   <body>
 
     <div id="wrapper">

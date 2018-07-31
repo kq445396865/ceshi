@@ -119,99 +119,70 @@
 
     <div id="page-wrapper">
 
-    <div class="container-fluid">
+    <div class="container-fluid" >
 
         <!-- Page Heading -->
-        <div class="row">
+        <div class="row1">
             <div class="col-lg-12">
 
                 <ol class="breadcrumb">
                     <li>
-                        <i class="fa fa-dashboard"></i>  <a href="/admin.php?c=menu">菜单管理</a>
+                        <i class="fa fa-dashboard"></i>  <a href="/admin.php?c=menu">推荐位管理</a>
                     </li>
                     <li class="active">
-                        <i class="fa fa-edit"></i> 添加
+                        <i class="fa fa-table"></i><?php echo ($nav); ?>
                     </li>
                 </ol>
             </div>
         </div>
         <!-- /.row -->
-
-        <div class="row">
+        <div>
+          <button  id="button-add" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>添加 </button>
+        </div>
+        <div class="row1">
             <div class="col-lg-6">
+                <h3></h3>
+                <div class="table-responsive">
+                    <form id="singcms-listorder">
+                    <table class="table table-bordered table-hover singcms-table">
+                        <thead>
+                        <tr>
 
-                <form class="form-horizontal" id="singcms-form">
-                    <div class="form-group">
-                        <label for="inputname" class="col-sm-2 control-label">菜单名:</label>
-                        <div class="col-sm-5">
-                            <input type="text" name="name" class="form-control" id="inputname" placeholder="请填写菜单名">
-                        </div>
-                    </div>
-                    <!--<div class="form-group">
-                        <label for="inputname" class="col-sm-2 control-label">父类菜单ID:</label>
-                        <div class="col-sm-5">
-                            <select class="form-control" name="parentid">
-                                <option value="0">一级菜单</option>
-                                <?php if(is_array($menus)): $i = 0; $__LIST__ = $menus;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$parent): $mod = ($i % 2 );++$i;?><option value="<?php echo ($parent["menu_id"]); ?>"><?php echo ($parent["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
-                            </select>
-                        </div>
-                    </div>-->
-                    <div class="form-group">
-                        <label for="inputPassword3" class="col-sm-2 control-label">菜单类型:</label>
-                        <div class="col-sm-5">
-                            <input type="radio" name="type" id="optionsRadiosInline1" value="1" checked> 后台菜单
-                            <input type="radio" name="type" id="optionsRadiosInline2" value="0"> 前端栏目
-                        </div>
+                            <th>id</th>
+                            <th>推荐位名称</th>
+                            <th>时间</th>
+                            <th>状态</th>
+                            <th>操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <?php if(is_array($poss)): $i = 0; $__LIST__ = $poss;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
 
-                    </div>
-                    <div class="form-group">
-                        <label for="inputPassword3" class="col-sm-2 control-label">模块名:</label>
-                        <div class="col-sm-5">
-                            <input type="text" class="form-control" name="m" id="inputPassword3" placeholder="模块名如admin">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="inputPassword3" class="col-sm-2 control-label">控制器:</label>
-                        <div class="col-sm-5">
-                            <input type="text" class="form-control" name="c" id="inputPassword3" placeholder="控制器如index">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="inputPassword3" class="col-sm-2 control-label">方法:</label>
-                        <div class="col-sm-5">
-                            <input type="text" class="form-control" name="f" id="inputPassword3" placeholder="方法名如index">
-                        </div>
-                    </div>
-                    <!--<div class="form-group">
-                        <label for="inputPassword3" class="col-sm-2 control-label">是否为前台菜单:</label>
-                        <div class="col-sm-5">
-                            <input type="radio" name="type" id="optionsRadiosInline1" value="0" checked> 否
-                            <input type="radio" name="type" id="optionsRadiosInline2" value="1"> 是
-                        </div>
+                                <td><?php echo ($vo["id"]); ?></td>
+                                <td><?php echo ($vo["name"]); ?></td>
+                                <td><?php echo (date("Y-m-d",$vo["create_time"])); ?></td>
+                                <td><?php echo (Status($vo["status"])); ?></td>
+                                <td>
+                                  <span class="glyphicon glyphicon-edit" aria-hidden="true" id="singcms-edit" attr-id="<?php echo ($vo["id"]); ?>"></span>    
+                                  <a href="javascript:void(0)" attr-id="<?php echo ($vo["id"]); ?>" id="singcms-delete"  attr-a="menu" attr-message="删除"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a>
+                                </td>
+                            </tr><?php endforeach; endif; else: echo "" ;endif; ?>
 
-                    </div>-->
-
-                    <div class="form-group">
-                        <label for="inputPassword3" class="col-sm-2 control-label">状态:</label>
-                        <div class="col-sm-5">
-                            <input type="radio" name="status" id="optionsRadiosInline1" value="1" checked> 开启
-                            <input type="radio" name="status" id="optionsRadiosInline2" value="0"> 关闭
-                        </div>
-
-                    </div>
-
-                    <div class="form-group">
-                        <div class="col-sm-offset-2 col-sm-10">
-                            <button type="button" class="btn btn-default" id="singcms-button-submit">提交</button>
-                        </div>
-                    </div>
-                </form>
-
-
+                        </tbody>
+                    </table>
+                    </form>
+                    <nav>
+                        <ul class="pagination">
+                            <?php echo ($pageRes); ?>
+                        </ul>
+                    </nav>
+                </div>
             </div>
 
         </div>
         <!-- /.row -->
+
+
 
     </div>
     <!-- /.container-fluid -->
@@ -223,10 +194,12 @@
 <!-- /#wrapper -->
 <!-- Morris Charts JavaScript -->
 <script>
-    var SCOPE = {
-        'save_url' : '/admin.php?c=menu&a=add',
-        'jump_url' : '/admin.php?c=menu',
-    }
+   var SCOPE = {
+        'add_url' : '/admin.php?c=position&a=add',
+        'edit_url' : '/admin.php?c=position&a=edit',
+        'set_status_url' : '/admin.php?c=menu&a=setStatus',
+        'listorder_url' : '/admin.php?c=menu&a=listorder',
+   }
 </script>
 <script type="text/javascript" src="./Public/js/admin/common.js"></script>
 
