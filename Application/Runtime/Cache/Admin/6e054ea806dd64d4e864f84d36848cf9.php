@@ -119,10 +119,10 @@
 
     <div id="page-wrapper">
 
-    <div class="container-fluid" >
+    <div class="container-fluid">
 
         <!-- Page Heading -->
-        <div class="row1">
+        <div class="row">
             <div class="col-lg-12">
 
                 <ol class="breadcrumb">
@@ -130,59 +130,52 @@
                         <i class="fa fa-dashboard"></i>  <a href="/admin.php?c=menu">推荐位管理</a>
                     </li>
                     <li class="active">
-                        <i class="fa fa-table"></i><?php echo ($nav); ?>
+                        <i class="fa fa-edit"></i> 添加
                     </li>
                 </ol>
             </div>
         </div>
         <!-- /.row -->
-        <div>
-          <button  id="button-add" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>添加 </button>
-        </div>
-        <div class="row1">
+
+        <div class="row">
             <div class="col-lg-6">
-                <h3></h3>
-                <div class="table-responsive">
-                    <form id="singcms-listorder">
-                    <table class="table table-bordered table-hover singcms-table">
-                        <thead>
-                        <tr>
+                <form class="form-horizontal" id="singcms-form">
+                    <div class="form-group">
+                        <label for="inputname" class="col-sm-2 control-label">推荐位名:</label>
+                        <div class="col-sm-5">
+                            <input type="text" name="name" class="form-control" id="inputname" placeholder="请填写推荐位名" value="<?php echo ($positions["name"]); ?>">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="inputPassword3" class="col-sm-2 control-label">描述:</label>
+                        <div class="col-sm-5">
+                            <input type="text" class="form-control" name="description" id="inputPassword3" placeholder="描述" value="<?php echo ($positions["description"]); ?>">
+                        </div>
+                    </div>
+                    
 
-                            <th>id</th>
-                            <th>推荐位名称</th>
-                            <th>时间</th>
-                            <th>状态</th>
-                            <th>操作</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <?php if(is_array($poss)): $i = 0; $__LIST__ = $poss;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
+                    <div class="form-group">
+                        <label for="inputPassword3" class="col-sm-2 control-label">状态:</label>
+                        <div class="col-sm-5">
+                            <input type="radio" name="status" id="optionsRadiosInline1" value="1" <?php if($positions["status"] == 1): ?>checked<?php endif; ?>> 开启
+                            <input type="radio" name="status" id="optionsRadiosInline2" value="0"<?php if($positions["status"] == 0): ?>checked<?php endif; ?>> 关闭
+                        </div>
 
-                                <td><?php echo ($vo["id"]); ?></td>
-                                <td><?php echo ($vo["name"]); ?></td>
-                                <td><?php echo (date("Y-m-d",$vo["create_time"])); ?></td>
-                                <td><?php echo (Status($vo["status"])); ?></td>
-                                <td>
-                                  <span class="glyphicon glyphicon-edit" aria-hidden="true" id="singcms-edit" attr-id="<?php echo ($vo["id"]); ?>"></span>    
-                                  <a href="javascript:void(0)" attr-id="<?php echo ($vo["id"]); ?>" id="singcms-delete"  attr-a="menu" attr-message="删除"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a>
-                                </td>
-                            </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+                    </div>
+                   <input type="hidden" name="id" value="<?php echo ($positions["id"]); ?>">
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="button" class="btn btn-default" id="singcms-button-submit">提交</button>
+                        </div>
+                    </div>
+                </form>
 
-                        </tbody>
-                    </table>
-                    </form>
-                    <nav>
-                        <ul class="pagination">
-                            <?php echo ($pageRes); ?>
-                        </ul>
-                    </nav>
-                </div>
+
             </div>
 
         </div>
         <!-- /.row -->
-
-
 
     </div>
     <!-- /.container-fluid -->
@@ -194,12 +187,10 @@
 <!-- /#wrapper -->
 <!-- Morris Charts JavaScript -->
 <script>
-   var SCOPE = {
-        'add_url' : '/admin.php?c=position&a=add',
-        'edit_url' : '/admin.php?c=position&a=edit',
-        'set_status_url' : '/admin.php?c=position&a=setStatus',
-        'listorder_url' : '/admin.php?c=menu&a=listorder',
-   }
+    var SCOPE = {
+        'save_url' : '/admin.php?c=position&a=add',
+        'jump_url' : '/admin.php?c=position',
+    }
 </script>
 <script type="text/javascript" src="./Public/js/admin/common.js"></script>
 

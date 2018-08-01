@@ -38,6 +38,46 @@ class PositionModel extends Model{
 
        return $this->_db->where($data)->count();
 	}
+
+    public function find($id){
+    	if(!$id || !is_numeric($id)){
+    		return array();
+    	}
+
+    	return $this->_db->where('id='.$id)->find();
+    }
+
+	public function UpdataPositionById($id,$data){
+		
+         if(!$id || !is_numeric($id)){
+
+               throw_exception('ID不合法');
+
+         }
+         if(!$data || !is_array($data)){
+               
+               throw_exception('数据不合法');
+         }
+
+          $this->_db->where('id='.$id)->save($data);
+	}
+
+
+	public function UpadtaStatusById($id,$status){
+        
+        if(!$id || !is_numeric($id)){
+
+        	 throw_exception('ID不合法');
+        }
+
+        if(!$status || !is_numeric($status)){
+
+        	throw_exception('状态不合法');
+        }
+        $data['status'] = $status;
+        
+        return $this->_db->where('id='.$id)->save($data);
+	}
 }
 
 
