@@ -22,10 +22,18 @@ class ContentController extends CommonController
 		$news = D("News")->getNews($conds,$page,$pageSize);
 		$newsCount = D("News")->getNewsCount($conds);
 
+        $position = D("Position")->getNormalPosition();
+
 		$res = new \Think\Page($newsCount,$pageSize);
+
 		$pageRes = $res->show();
+		
+		$this->assign('positions',$position);
+
 		$this->assign('news',$news);
+
 		$this->assign('pageRes',$pageRes);
+
 		$this->assign('result',array(
             'catid' => $conds['catid'],
             'title' => $conds['title'],
@@ -73,6 +81,7 @@ class ContentController extends CommonController
             $webSiteMenu = D("Menu")->getNavMenus();
 			$this->assign('webSiteMenu',$webSiteMenu);
 			$this->display();
+			
 		}
 		
 	}

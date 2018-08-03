@@ -5,26 +5,19 @@ class PositionController extends CommonController{
       
 
       public function index(){
-      	/**
-      	 * 分页操作
-      	 * @var [type]
-      	 */
-        $page = $_REQUEST['page'] ? $_REQUEST['page'] : 1;
-        $pageSize = $_REQUEST['pageSize'] ? $_REQUEST['pageSize'] : 3;
-        $poss = D("Position")->getPositions($data,$page,$pageSize);
-        $posCount = D("Position")->getPositionsCount($data);
+        $data['status'] = array('neq',-1);
+        $positions = D("Position")->select($data);
 
-        $res = new \Think\Page($posCount,$pageSize);
-        $pageRes = $res->show();
-        $this->assign('pageRes',$pageRes);
-        $this->assign('poss',$poss);
+
+        $this->assign('positions',$positions);
       	$this->display();
+
       }
 
 
       public function add(){
 
-      	if($_POST){
+      	if(IS_POST){
 
       		if(!isset($_POST['name']) || !$_POST['name']){
 
@@ -36,8 +29,11 @@ class PositionController extends CommonController{
                   return show(0,'描述不能为空!');
       		}
             if($_POST['id']){
+
             	return $this->save($_POST);
+
             }
+
       		$posId = D("Position")->insert($_POST);
 
       		if(!$posId){

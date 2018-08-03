@@ -156,7 +156,7 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <?php if(is_array($poss)): $i = 0; $__LIST__ = $poss;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
+                        <?php if(is_array($positions)): $i = 0; $__LIST__ = $positions;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
 
                                 <td><?php echo ($vo["id"]); ?></td>
                                 <td><?php echo ($vo["name"]); ?></td>
@@ -171,11 +171,6 @@
                         </tbody>
                     </table>
                     </form>
-                    <nav>
-                        <ul class="pagination">
-                            <?php echo ($pageRes); ?>
-                        </ul>
-                    </nav>
                 </div>
             </div>
 

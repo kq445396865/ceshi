@@ -22,15 +22,13 @@ class PositionModel extends Model{
 	}
 
 
-	public function getPositions($data,$page,$pageSize=10){
+    public function select($data=array()){
 
-		$data['status'] = array('neq',-1);
-        
-        $offset = ($page - 1) * $pageSize;
+    	$condition = $data;
 
-        return $this->_db->where($data)->order('id desc')->limit($offset,$pageSize)->select();
+    	return $this->_db->where($condition)->order('id desc')->select();
 
-	}
+    }
 
 	public function getPositionsCount($data=array()){
 
@@ -77,6 +75,25 @@ class PositionModel extends Model{
         $data['status'] = $status;
         
         return $this->_db->where('id='.$id)->save($data);
+	}
+
+	public function getPositions(){
+
+		$data = array(
+
+           'status' => array('neq',-1),
+
+		);
+
+		return $this->_db->where($data)->order('id desc')->select();
+	}
+
+
+	public function getNormalPosition(){
+
+        $condition = array('status'=>1);
+        
+        return $this->_db->where($condition)->order('id desc')->select();
 	}
 }
 
