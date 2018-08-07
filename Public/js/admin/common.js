@@ -27,7 +27,7 @@ $("#singcms-button-submit").click(function(){
             //失败
            return  dialog.error(result.message);
         }
-    },'JSON');
+    },"JSON");
 });
 
 

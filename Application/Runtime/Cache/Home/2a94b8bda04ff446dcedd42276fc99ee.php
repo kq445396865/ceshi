@@ -1,13 +1,15 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php if (!defined('THINK_PATH')) exit(); $config = D("Basic")->select(); ?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!-- saved from url=(0051)https://www.fuzhanzhang.com/index.php?qd=baidu#hero -->
 <html xmlns="http://www.w3.org/1999/xhtml" class="fp-enabled" style="overflow: hidden; height: 100%;">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="zyiis_check_verify" content="063034c021d991610181c1cb54172d9266">
 
-<title>华夏乡村文化传媒有限公司</title> 
-<meta name="keywords" content=""> 
-<meta name="description" content=""> 
+<title><?php echo ($config["title"]); ?></title> 
+<meta name="keywords" content="<?php echo ($config["keywords"]); ?>"> 
+<meta name="description" content="<?php echo ($config["description"]); ?>"> 
 <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
 <link rel="stylesheet" type="text/css" href="./Public/css/home/common.css">
 <link rel="stylesheet" type="text/css" href="./Public/css/home/index.css">

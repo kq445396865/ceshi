@@ -114,143 +114,67 @@
 
       </nav>
 
-  <script src="/Public/js/kindeditor/kindeditor-all.js"></script>
-  <div id="page-wrapper">
+<div id="page-wrapper">
 
-    <div class="container-fluid">
+	<div class="container-fluid">
 
-      <!-- Page Heading -->
-      <div class="row">
-        <div class="col-lg-12">
+		<!-- Page Heading -->
+		
+		<!-- /.row -->
 
-          <ol class="breadcrumb">
-            <li>
-              <i class="fa fa-dashboard"></i>  <a href="/admin.php?c=content">文章管理</a>
-            </li>
-            <li class="active">
-              <i class="fa fa-edit"></i> 文章添加
-            </li>
-          </ol>
-        </div>
-      </div>
-      <!-- /.row -->
+		<div class="row">
+			<div class="col-lg-6">
 
-      <div class="row">
-        <div class="col-lg-6">
-          <form class="form-horizontal" id="singcms-form">
-            <div class="form-group">
-              <label for="inputname" class="col-sm-2 control-label">标题:</label>
-              <div class="col-sm-5">
-                <input type="text" name="title" class="form-control" id="inputname" placeholder="请填写标题">
-              </div>
-            </div>
-<!--             <div class="form-group">
-  <label for="inputname" class="col-sm-2 control-label">短标题:</label>
-  <div class="col-sm-5">
-    <input type="text" name="small_title" class="form-control" id="inputname" placeholder="请填写短标题">
-  </div>
-</div> -->
+				<form class="form-horizontal" id="singcms-form">
+					<div class="form-group">
+						<label for="inputname" class="col-sm-2 control-label">站点标题:</label>
+						<div class="col-sm-5">
+							<input type="text" name="title" value="<?php echo ($vo["title"]); ?>" class="form-control" id="inputname" placeholder="请填写站点标题">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="inputPassword3" class="col-sm-2 control-label">站点关键词:</label>
+						<div class="col-sm-5">
+							<input type="text" class="form-control" value="<?php echo ($vo["keywords"]); ?>" name="keywords" id="inputPassword3" placeholder="请填写站点关键词">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="inputPassword3" class="col-sm-2 control-label">站点描述:</label>
+						<div class="col-sm-5">
+							<textarea class="form-control" rows="3" name="description"><?php echo ($vo["description"]); ?></textarea>
+						</div>
+					</div>
 
 
-
-            <div class="form-group">
-              <label for="inputname" class="col-sm-2 control-label">缩图:</label>
-              <div class="col-sm-5">
-                <input id="file_upload"  type="file" multiple="true">
-                <img style="display: none" id="upload_org_code_img" src="" width="150" height="150">
-                <input id="file_upload_image" name="thumb" type="hidden" multiple="true" value="">
-              </div>
-            </div>
+					<div class="form-group">
+						<div class="col-sm-offset-2 col-sm-10">
+							<button type="button" class="btn btn-default" id="singcms-button-submit">提交</button>
+						</div>
+					</div>
+				</form>
 
 
+			</div>
 
-   <!--          <div class="form-group">
-     <label for="inputname" class="col-sm-2 control-label">标题颜色:</label>
-     <div class="col-sm-5">
-       <select class="form-control" name="title_font_color">
-         <option value="">==请选择颜色==</option>
-           <?php if(is_array($titleFontColor)): foreach($titleFontColor as $key=>$color): ?><option value="<?php echo ($key); ?>"><?php echo ($color); ?></option><?php endforeach; endif; ?>
-       </select>
-     </div>
-   </div> -->
-            <div class="form-group">
-              <label for="inputname" class="col-sm-2 control-label">所属栏目:</label>
-              <div class="col-sm-5">
-                <select class="form-control" name="catid">
-                    <option value="">请选择栏目</option>
-                  <?php if(is_array($webSiteMenu)): foreach($webSiteMenu as $key=>$sitenav): ?><option value="<?php echo ($sitenav["menu_id"]); ?>"><?php echo ($sitenav["name"]); ?></option><?php endforeach; endif; ?>
-                </select>
-              </div>
-            </div>
-<!-- 
-            <div class="form-group">
-              <label for="inputname" class="col-sm-2 control-label">来源:</label>
-              <div class="col-sm-5">
-                <select class="form-control" name="copyfrom">
-                  <?php if(is_array($copyfrom)): foreach($copyfrom as $key=>$cfrom): ?><option value="<?php echo ($key); ?>"><?php echo ($cfrom); ?></option><?php endforeach; endif; ?>
-                </select>
-              </div>
-            </div> -->
+		</div>
+		<!-- /.row -->
 
-            <div class="form-group">
-              <label for="inputPassword3" class="col-sm-2 control-label">内容:</label>
-              <div class="col-sm-5">
-                <textarea class="input js-editor" id="editor_singcms" name="content" rows="20" ></textarea>
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="inputPassword3" class="col-sm-2 control-label">描述:</label>
-              <div class="col-sm-9">
-                <input type="text" class="form-control" name="description" id="inputPassword3" placeholder="描述">
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="inputPassword3" class="col-sm-2 control-label">关键字:</label>
-              <div class="col-sm-5">
-                <input type="text" class="form-control" name="keywords" id="inputPassword3" placeholder="请填写关键词">
-              </div>
-            </div>
-
-
-            <div class="form-group">
-              <div class="col-sm-offset-2 col-sm-10">
-                <button type="button" class="btn btn-default" id="singcms-button-submit">提交</button>
-              </div>
-            </div>
-          </form>
-
-
-        </div>
-
-      </div>
-      <!-- /.row -->
-
-    </div>
-    <!-- /.container-fluid -->
-
-  </div>
-  <!-- /#page-wrapper -->
+	</div>
+	<!-- /.container-fluid -->
 
 </div>
-<script>
-  var SCOPE = {
-    'save_url' : '/admin.php?c=content&a=add',
-    'jump_url' : '/admin.php?c=content',
-    'ajax_upload_image_url' : '/admin.php?c=image&a=ajaxuploadimage',
-    'ajax_upload_swf' : '/Public/js/party/uploadify.swf',
-  };
+<!-- /#page-wrapper -->
 
-</script>
+</div>
 <!-- /#wrapper -->
-<script src="/Public/js/admin/image.js"></script>
+
 <script>
-  // 6.2
-  KindEditor.ready(function(K) {
-    window.editor = K.create('#editor_singcms',{
-      uploadJson : '/admin.php?c=image&a=kindupload',
-      afterBlur : function(){this.sync();}, //
-    });
-  });
+	var SCOPE = {
+		'save_url' : '/admin.php?c=basic&a=add',
+		'jump_url' : '/admin.php?c=basic',
+	};
+
 </script>
 <script type="text/javascript" src="./Public/js/admin/common.js"></script>
 

@@ -5,9 +5,9 @@ class PositionController extends CommonController{
       
 
       public function index(){
+      	
         $data['status'] = array('neq',-1);
         $positions = D("Position")->select($data);
-
 
         $this->assign('positions',$positions);
       	$this->display();
