@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<link rel="stylesheet" href="./Public/layui/css/layui.css">
+<body>
+	<div class="wk_body">
+<ul>
+    <volist name="result['listNews']" id="vo">
+	<li class="last"><div class="wk_img"><a href="/index.php?c=Detail&id={$vo.news_id}"><img src="{$vo.thumb}" width="290" height="190" alt="{$vo.title}" title="{$vo.title}"></a></div></li>
+    </volist>
+	
+</ul><!--首页案例内部调用位置-->
+
+
+<div>{$result['pageres']}</div>
+</div>
+</body>
+</html>

@@ -1,7 +1,7 @@
 <?php
 namespace Home\Controller;
 use Think\Controller;
-class IndexController extends Controller {
+class IndexController extends CommonController {
     public function index(){
        //获取首页案例数据
        $pronewslist = D("News")->select(array('status'=>1,'catid'=>5,'thumb'=>array('neq','')),8);
