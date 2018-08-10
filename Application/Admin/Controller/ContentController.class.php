@@ -54,7 +54,7 @@ class ContentController extends CommonController
 			if(!isset($_POST['title']) || !$_POST['title']){
 				 return show(0,'文章标题不能为空');
 			}
-			if(!isset($_POST['content']) || !$_POST['content']){
+			if(!isset($_POST['catid']) || !$_POST['catid']){
                  return show(0,'所属栏目不能为空');
 			}
 			if(!isset($_POST['content']) || !$_POST['content']){
