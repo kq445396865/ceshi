@@ -30,11 +30,14 @@ class CatController extends CommonController{
 		$res = new \Think\Page($newsCount,$pageSize);
 
 		$pageRes = $res->show();
+
+    $leftPos = D("PositionContent")->select(array('status' =>1,'position_id' => '1'),6);
         
         $this->assign('result',array(
                'catid' => $id,
                'listNews' => $news,
                'pageres' => $pageRes,
+               'leftPos' => $leftPos,
         ));
 
 		$this->display();

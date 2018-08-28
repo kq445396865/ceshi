@@ -22,7 +22,7 @@ class ContentController extends CommonController
 		$news = D("News")->getNews($conds,$page,$pageSize);
 		$newsCount = D("News")->getNewsCount($conds);
 
-        $position = D("Position")->getNormalPosition();
+        $position = D("Position")->getNormalPositions();
 
 		$res = new \Think\Page($newsCount,$pageSize);
 
@@ -62,7 +62,10 @@ class ContentController extends CommonController
 			if(!isset($_POST['content']) || !$_POST['content']){
                  return show(0,'文章内容不能为空');
 			}
-
+            $res = D("News")->getNewsByTitle($_POST['title']);
+            if($res){
+                return show(0,'文章标题重复');
+            }
             if($_POST['news_id']){
 
             	 return $this->save($_POST);
@@ -168,6 +171,53 @@ class ContentController extends CommonController
       }
 
          return show(0,'没有提交数据');
+
+	}
+
+
+	public function push(){
+
+		$jumpUrl = $_SERVER['HTTP_REFERER'];
+		$positionId = intval($_POST['position_id']);
+		$newsId = $_POST['push'];
+
+		if(!$positionId){
+           return show(0,'推荐位不存在');
+		}
+
+		if(!$newsId || !is_array($newsId)){
+           return show(0,'请选择推荐的文章ID进行推荐');
+		}
+        try {
+	        	$news = D("News")->getNewsByNewsIdIn($newsId);
+				if(!$news){
+		 			return show(0,'没有相关内容');
+				}
+
+				foreach($news as $new){
+		            $data = array(
+		            	'position_id' => $positionId,
+		            	'title' => $new['title'],
+		            	'thumb' => $new['thumb'],
+		            	'news_id' => $new['news_id'],
+		            	'create_time' => $new['create_time'],
+		            	'status' => 1, 
+		            );
+		            $res = D("PositionContent")->getPositionById($data['news_id'],$data['position_id']);
+                    if($res){
+                       return show(0,'该文章已推荐');
+                    }
+		            $position = D("PositionContent")->insert($data);
+
+				}
+
+        } catch (Exception $e) {
+        	
+        	return show(0,$e->getMessage());
+        }
+
+        return show(1,'推荐成功',array('jump_url' => $jumpUrl));
+		
 
 	}
 

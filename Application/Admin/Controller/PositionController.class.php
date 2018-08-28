@@ -91,7 +91,7 @@ class PositionController extends CommonController{
           
           try {
           	
-          	      	  if($_POST){
+          	      if($_POST){
 		      	  	  $posId = $_POST['id'];
 		      	  	  $status = $_POST['status'];
 		      	  	  $res = D("Position")->UpadtaStatusById($posId,$status);

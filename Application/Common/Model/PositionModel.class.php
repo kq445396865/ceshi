@@ -89,7 +89,7 @@ class PositionModel extends Model{
 	}
 
 
-	public function getNormalPosition(){
+	public function getNormalPositions(){
 
         $condition = array('status'=>1);
         

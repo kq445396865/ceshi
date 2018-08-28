@@ -33,7 +33,7 @@
       if($status == 0){
             $str = '关闭';
       }elseif($status == 1){
-            $str = '开启';
+            $str = '正常';
       }elseif($status == -1){
            $str = '删除';
       }

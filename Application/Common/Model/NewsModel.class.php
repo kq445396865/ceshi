@@ -119,6 +119,30 @@ class NewsModel extends Model{
     	return $this->_db->where('news_id='.$id)->save($data);
     }
 
+
+    public function getNewsByNewsIdIn($newsId){
+
+         if(!is_array($newsId)){
+             throw_exception('参数不合法');
+         }
+
+         $data = array(
+
+          'news_id' => array('in',implode(',',$newsId)), 
+        );
+
+         return $this->_db->where($data)->select();
+
+    }
+
+
+    public function getNewsByTitle($title){
+         if($title){
+            $conditions['title'] = array('like','%'.$title.'%');
+         }
+         return $this->_db->where($conditions)->find();
+    }
+
 }
 
 

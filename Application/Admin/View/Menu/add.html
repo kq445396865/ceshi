@@ -5,7 +5,7 @@
 <div id="wrapper">
 
     <include file="Index/nav"/>
-
+    <script src="/Public/js/kindeditor/kindeditor-all.js"></script>
     <div id="page-wrapper">
 
     <div class="container-fluid">
@@ -92,6 +92,23 @@
                     </div>
 
                     <div class="form-group">
+                      <label for="inputPassword3" class="col-sm-2 control-label">内容:</label>
+                      <div class="col-sm-5">
+                        <textarea class="input js-editor" id="editor_singcms" name="content" rows="20" ></textarea>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputPassword3" class="col-sm-2 control-label">模板:</label>
+                        <div class="col-sm-5">
+                            <input type="radio" name="mb" id="optionsRadiosInline1" value="1"> 文章
+                            <input type="radio" name="mb" id="optionsRadiosInline2" value="0" checked> 图片
+                            <input type="radio" name="mb" id="optionsRadiosInline1" value="2"> 单页 
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-10">
                             <button type="button" class="btn btn-default" id="singcms-button-submit">提交</button>
                         </div>
@@ -118,6 +135,16 @@
         'save_url' : '/admin.php?c=menu&a=add',
         'jump_url' : '/admin.php?c=menu',
     }
+</script>
+<script src="/Public/js/admin/image.js"></script>
+<script>
+  // 6.2
+  KindEditor.ready(function(K) {
+    window.editor = K.create('#editor_singcms',{
+      uploadJson : '/admin.php?c=image&a=kindupload',
+      afterBlur : function(){this.sync();}, //
+    });
+  });
 </script>
 <include file="Index/footer" />
 

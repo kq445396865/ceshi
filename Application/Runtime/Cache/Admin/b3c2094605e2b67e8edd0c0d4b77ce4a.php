@@ -1,5 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?>
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -28,7 +27,6 @@
     <script src="./Public/js/party/jquery.uploadify.min.js"></script>
 </head>
 <body>
-
 <div id="wrapper">
 
          <!-- Sidebar -->
@@ -116,119 +114,97 @@
 
       </nav>
 
-    <script src="/Public/js/kindeditor/kindeditor-all.js"></script>
-    <div id="page-wrapper">
+<div id="page-wrapper">
 
-    <div class="container-fluid">
+    <div class="container-fluid" >
 
         <!-- Page Heading -->
         <div class="row">
             <div class="col-lg-12">
 
                 <ol class="breadcrumb">
-                    <li>
-                        <i class="fa fa-dashboard"></i>  <a href="/admin.php?c=menu">菜单管理</a>
-                    </li>
+
                     <li class="active">
-                        <i class="fa fa-edit"></i> 添加
+                        <i class="fa fa-table"></i>推荐位内容管理
                     </li>
                 </ol>
             </div>
         </div>
         <!-- /.row -->
 
+
+        <div class="row">
+            <form action="/admin.php" method="get">
+                <input type="hidden" name="c" value="PositionContent"/>
+                <input type="hidden" name="a" value="index"/>
+                <div class="col-md-3">
+                    <div class="input-group">
+                        <span class="input-group-addon">推荐位</span>
+                        <select class="form-control" name="position_id">
+                            <?php if(is_array($positions)): foreach($positions as $key=>$position): ?><option value="<?php echo ($position["id"]); ?>"<?php if($position['id'] == $positionId): ?>selected="selected"<?php endif; ?> ><?php echo ($position["name"]); ?></option><?php endforeach; endif; ?>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="col-md-3">
+                    <div class="input-group">
+                        <input class="form-control" name="title" type="text" value="<?php echo ($title); ?>" placeholder="文章标题" />
+                <span class="input-group-btn">
+                  <button id="sub_data" type="submit" class="btn btn-primary"><i class="glyphicon glyphicon-search"></i></button>
+                </span>
+                    </div>
+                </div>
+            </form>
+        </div>
+
         <div class="row">
             <div class="col-lg-6">
+                <h3></h3>
+                <div class="table-responsive">
+                    <form id="singcms-listorder">
+                    <table class="table table-bordered table-hover singcms-table">
+                        <thead>
+                        <tr>
+                            <th width="14">排序</th><!--7-->
+                            <th>id</th>
+                            <th>标题</th>
+                            <th>时间</th>
+                            <th>封面图</th>
+                            <th>状态</th>
+                            <th>操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <?php if(is_array($contents)): $i = 0; $__LIST__ = $contents;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
+                                <td><input size=4 type='text'  name='listorder[<?php echo ($vo["id"]); ?>]' value="<?php echo ($vo["listorder"]); ?>"/></td>
+                                <td><?php echo ($vo["id"]); ?></td>
+                                <td><?php echo ($vo["title"]); ?></td>
+                                <td><?php echo (date("y-m-d H:i",$vo["create_time"])); ?></td>
+                                <td><?php echo (isThumb($vo["thumb"])); ?></td>
+                                <td>
+                                    <span  attr-status="<?php if($vo['status'] == 1): ?>0<?php else: ?>1<?php endif; ?>"  attr-id="<?php echo ($vo["id"]); ?>" class="sing_cursor singcms-on-off" id="singcms-on-off" ><?php echo (status($vo["status"])); ?></span>
+                                </td>
+                                <td>
+                                    <span class="sing_cursor glyphicon glyphicon-edit" aria-hidden="true" id="singcms-edit" attr-id="<?php echo ($vo["id"]); ?>" ></span>
+                                    <a href="javascript:void(0)" id="singcms-delete"  attr-id="<?php echo ($vo["id"]); ?>"  attr-message="删除">
+                                        <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
+                                    </a>
+                                </td>
+                            </tr><?php endforeach; endif; else: echo "" ;endif; ?>
 
-                <form class="form-horizontal" id="singcms-form">
-                    <div class="form-group">
-                        <label for="inputname" class="col-sm-2 control-label">菜单名:</label>
-                        <div class="col-sm-5">
-                            <input type="text" name="name" class="form-control" id="inputname" placeholder="请填写菜单名">
-                        </div>
+                        </tbody>
+                    </table>
+                    </from>
+                    <div>
+                        <button  id="button-listorder" type="button" class="btn btn-primary dropdown-toggle" ><span class="glyphicon glyphicon-resize-vertical" aria-hidden="true"></span>更新排序</button>
                     </div>
-                    <!--<div class="form-group">
-                        <label for="inputname" class="col-sm-2 control-label">父类菜单ID:</label>
-                        <div class="col-sm-5">
-                            <select class="form-control" name="parentid">
-                                <option value="0">一级菜单</option>
-                                <?php if(is_array($menus)): $i = 0; $__LIST__ = $menus;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$parent): $mod = ($i % 2 );++$i;?><option value="<?php echo ($parent["menu_id"]); ?>"><?php echo ($parent["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
-                            </select>
-                        </div>
-                    </div>-->
-                    <div class="form-group">
-                        <label for="inputPassword3" class="col-sm-2 control-label">菜单类型:</label>
-                        <div class="col-sm-5">
-                            <input type="radio" name="type" id="optionsRadiosInline1" value="1" checked> 后台菜单
-                            <input type="radio" name="type" id="optionsRadiosInline2" value="0"> 前端栏目
-                        </div>
-
-                    </div>
-                    <div class="form-group">
-                        <label for="inputPassword3" class="col-sm-2 control-label">模块名:</label>
-                        <div class="col-sm-5">
-                            <input type="text" class="form-control" name="m" id="inputPassword3" placeholder="模块名如admin">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="inputPassword3" class="col-sm-2 control-label">控制器:</label>
-                        <div class="col-sm-5">
-                            <input type="text" class="form-control" name="c" id="inputPassword3" placeholder="控制器如index">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="inputPassword3" class="col-sm-2 control-label">方法:</label>
-                        <div class="col-sm-5">
-                            <input type="text" class="form-control" name="f" id="inputPassword3" placeholder="方法名如index">
-                        </div>
-                    </div>
-                    <!--<div class="form-group">
-                        <label for="inputPassword3" class="col-sm-2 control-label">是否为前台菜单:</label>
-                        <div class="col-sm-5">
-                            <input type="radio" name="type" id="optionsRadiosInline1" value="0" checked> 否
-                            <input type="radio" name="type" id="optionsRadiosInline2" value="1"> 是
-                        </div>
-
-                    </div>-->
-
-                    <div class="form-group">
-                        <label for="inputPassword3" class="col-sm-2 control-label">状态:</label>
-                        <div class="col-sm-5">
-                            <input type="radio" name="status" id="optionsRadiosInline1" value="1" checked> 开启
-                            <input type="radio" name="status" id="optionsRadiosInline2" value="0"> 关闭
-                        </div>
-
-                    </div>
-
-                    <div class="form-group">
-                      <label for="inputPassword3" class="col-sm-2 control-label">内容:</label>
-                      <div class="col-sm-5">
-                        <textarea class="input js-editor" id="editor_singcms" name="content" rows="20" ></textarea>
-                      </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="inputPassword3" class="col-sm-2 control-label">模板:</label>
-                        <div class="col-sm-5">
-                            <input type="radio" name="mb" id="optionsRadiosInline1" value="1"> 文章
-                            <input type="radio" name="mb" id="optionsRadiosInline2" value="0" checked> 图片
-                            <input type="radio" name="mb" id="optionsRadiosInline1" value="2"> 单页 
-                        </div>
-
-                    </div>
-
-                    <div class="form-group">
-                        <div class="col-sm-offset-2 col-sm-10">
-                            <button type="button" class="btn btn-default" id="singcms-button-submit">提交</button>
-                        </div>
-                    </div>
-                </form>
-
-
+                </div>
             </div>
 
         </div>
         <!-- /.row -->
+
+
 
     </div>
     <!-- /.container-fluid -->
@@ -238,22 +214,14 @@
 
 </div>
 <!-- /#wrapper -->
-<!-- Morris Charts JavaScript -->
 <script>
     var SCOPE = {
-        'save_url' : '/admin.php?c=menu&a=add',
-        'jump_url' : '/admin.php?c=menu',
+        'edit_url' : '/admin.php?c=positioncontent&a=edit',
+        'set_status_url' : '/admin.php?c=positioncontent&a=setStatus',
+        'add_url' : '/admin.php?c=positioncontent&a=add',
+        'listorder_url' : '/admin.php?c=positioncontent&a=listorder',
     }
-</script>
-<script src="/Public/js/admin/image.js"></script>
-<script>
-  // 6.2
-  KindEditor.ready(function(K) {
-    window.editor = K.create('#editor_singcms',{
-      uploadJson : '/admin.php?c=image&a=kindupload',
-      afterBlur : function(){this.sync();}, //
-    });
-  });
+
 </script>
 <script type="text/javascript" src="./Public/js/admin/common.js"></script>
 
